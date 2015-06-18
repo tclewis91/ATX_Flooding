@@ -13,8 +13,11 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'puma'
 gem 'react-rails'
 
+gem 'rack', '1.6.1'
 
 group :development, :test do
+  gem "better_errors"
+  gem 'binding_of_caller'
   gem 'byebug'
   gem 'pry'
   gem 'web-console', '~> 2.0'
