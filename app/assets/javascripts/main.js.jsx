@@ -6,7 +6,7 @@ function start(e) {
 
 var App = Backbone.Router.extend({
     routes: {
-        'edit': 'profile',
+        'edit': 'home',
         'home': 'home',
         'map': 'map',
         'forums': 'forums',
@@ -27,3 +27,29 @@ Backbone.history.start();
 app.navigate('edit');
 
 React.render(<Search/>, document.getElementById('search'));
+
+$('.logButton').click(logIn);
+$('.userBox').keyup(logInPush);
+$('.passBox').keyup(logInPush);
+$('.signButton').click(signIn);
+$('.firstName').keyup(signInPush);
+$('.lastName').keyup(signInPush);
+$('.email').keyup(signInPush);
+$('.password').keyup(signInPush);
+$('.username').keyup(signInPush);
+
+function logIn (e) {
+
+};
+
+function logInPush (e) {
+
+};
+
+function signIn (e) {
+
+};
+
+function signInPush (e) {
+
+};
