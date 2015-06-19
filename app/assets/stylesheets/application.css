@@ -51,8 +51,8 @@ body {
       text-align: center; }
     nav li {
       display: inline-block;
-      margin-left: 0.5em;
-      margin-right: 0.5em; }
+      margin-left: 0.45em;
+      margin-right: 0.45em; }
 
   .jumbotron {
     background: url("/assets/JBG_austin_flooding10.JPG");
