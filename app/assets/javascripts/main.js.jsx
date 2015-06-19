@@ -15,7 +15,7 @@ var App = Backbone.Router.extend({
             React.render(<Profile/>, document.querySelector('#container'));
     },
         home: function() {
-            React.render(<Edit/>, document.querySelector('#container'));
+            React.render(<Home/>, document.querySelector('#container'));
     },
         forums: function() {
             React.render(<Forums/>, document.querySelector('#container'));
@@ -39,11 +39,17 @@ $('.password').keyup(signInPush);
 $('.username').keyup(signInPush);
 
 function logIn (e) {
+    var username = $('.userBox').val();
+    var password = $('.passBox').val();
+    if(username === "" && password === "") {
 
+    }
 };
 
 function logInPush (e) {
+    if(event.keycode === 13) {
 
+    }
 };
 
 function signIn (e) {
