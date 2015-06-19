@@ -40,7 +40,7 @@ body {
     background-color: #36607D; }
 
   .jumbotron {
-    background: url("../images/JBG_austin_flooding10.JPG");
+    background: url("/assets/JBG_austin_flooding10.JPG");
     background-size: cover;
     background-repeat: no-repeat; }
     .jumbotron h1 {
@@ -51,7 +51,8 @@ body {
       color: #A9CBBE; }
 
   .content img {
-    float: right; }
+    float: right;
+    max-width: 25%; }
   .content h2 {
     font-size: 2.5em;
     color: #5b6165; } }
