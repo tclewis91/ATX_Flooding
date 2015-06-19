@@ -82,8 +82,5 @@ production:
   <<: *default
   database: ATX_Flooding_production
   username: ATX_Flooding
-<<<<<<< HEAD
   password: <%= ENV['ATX_Flooding_DATABASE_PASSWORD'] %>
-=======
-  password: <%= ENV['ATX_FLOODING_DATABASE_PASSWORD'] %>
->>>>>>> 3873eedde63c36ab091e1d1036a4f70a66dcb9f3
+
