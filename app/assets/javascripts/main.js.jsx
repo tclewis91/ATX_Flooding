@@ -1,22 +1,25 @@
 $(document).ready(start);
 
 function start(e) {
-    
+
 }
 
-/* global Backbone React */
 var App = Backbone.Router.extend({
     routes: {
-        '': 'profile',
+        'edit': 'profile',
         'home': 'home',
-        'map': 'map'
+        'map': 'map',
+        'forums': 'forums',
     },
-    profile: function() {
-      React.render(<Profile/>, document.querySelector('#container'));
+        profile: function() {
+            React.render(<Profile/>, document.querySelector('#container'));
     },
-    home: function() {
-      React.render(<Edit/>, document.querySelector('#container'));
-    }
+        home: function() {
+            React.render(<Edit/>, document.querySelector('#container'));
+    },
+        forums: function() {
+            React.render(<Forums/>, document.querySelector('#container'));
+    },
 });
 
 var app = new App();
