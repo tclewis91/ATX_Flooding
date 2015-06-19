@@ -20,7 +20,12 @@ body {
   font-family: helvetica;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  line-height: 1.4em; }
+  body a {
+    text-decoration: none;
+    color: #4989C1;
+    font-weight: bold; }
 
 *,
 *:after,
@@ -28,5 +33,27 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+@media screen and (max-width: 50em) {
+  nav {
+    min-height: 4em;
+    background-color: #36607D; }
+
+  .jumbotron {
+    background: url("../images/JBG_austin_flooding10.JPG");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    .jumbotron h1 {
+      font-size: 4em;
+      color: #A9CBBE; }
+    .jumbotron p {
+      font-size: 1.1em;
+      color: #A9CBBE; }
+
+  .content img {
+    float: right; }
+  .content h2 {
+    font-size: 2.5em;
+    color: #5b6165; } }
 
 /*# sourceMappingURL=application.css.map */
