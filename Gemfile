@@ -13,6 +13,8 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'puma'
 gem 'react-rails'
 
+gem 'rack', '1.6.1'
+
 
 group :development, :test do
   gem "better_errors"
