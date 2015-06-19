@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
 gem 'puma'
 gem 'react-rails'
+gem 'devise', '~> 3.5.1'
 
 gem 'rack', '1.6.1'
 
