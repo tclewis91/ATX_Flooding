@@ -29,8 +29,14 @@ body {
 	font-size:$global;
 	max-width:$max;
 	font-family: helvetica;
+	h1, 
+	h2, 
+	a,
+	p {
+		line-height:1.4em;
+	}
+
 	@include box-sizing(border-box);
-	line-height: 1.4em;
 	a {
 		text-decoration: none;
 		color: #4989C1;
@@ -44,37 +50,211 @@ body {
   @include box-sizing(border-box);
 }
 
-@media screen and (max-width:50em){
+@media screen and (max-width:500px){
 	nav {
-		min-height: 4em;
+		height: 2em;
 		background-color: #36607D;
-
+		a {
+			color: white;
+		}
+		ul {
+			max-width: 80%;
+			margin: 0 auto;
+			padding-top: 0.3em;
+			text-align: center;
+		}
+		li {
+			display: inline-block;
+			margin-left: 0.5em;
+			margin-right: 0.5em;
+		}
 	}
 	.jumbotron {
 		background: url('/assets/JBG_austin_flooding10.JPG');
 		background-size: cover;
 		background-repeat: no-repeat;
+		background-position: left bottom;
+		min-height: 12em;
+		max-height:25em;
 		h1 {
-			font-size: 4em;
-			color: #A9CBBE;
+			font-size: 2em;
+			color: white;
+			padding-top: 2.4em;
 		}
 		p {
-			font-size: 1.1em;
-			color: #A9CBBE;
+			font-size: 1em;
+			color:white;
 		}
+	}
+	.container {
+		max-width: 90%;
+		margin: 2em auto;
 	}
 	.content {
+		background-color:#358466;
 		img {
 			float: right;
-			max-width: 25%;
+			max-width: 40%;
+			margin: 0 1em 0.5em 0.5em;
 		}
 		h2 {
-			font-size: 2.5em;
+			font-size: 1.5em;
 			color: #5b6165;
+			margin-left: 1em;
+		}
+		p {
+			font-size:0.9em;
+			margin: 0 1em;
 		}
 	}
+	aside {
+		background-color: #A9CBBD;
+	}
 }
+// End Of Query
 
+@media screen and (min-width:501px){
+	nav {
+		height: 2em;
+		background-color: #36607D;
+		a {
+			color: white;
+		}
+		ul {
+			float: right;
+			max-width: 80%;
+			padding-top: 0.3em;
+			text-align: none;
+		}
+		li {
+			display: inline-block;
+			margin-left: 0.5em;
+			margin-right: 0.5em;
+		}
+	}
+	.jumbotron {
+		background: url('/assets/JBG_austin_flooding10.JPG');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left bottom;
+		min-height: 12em;
+		max-height:25em;
+		h1 {
+			font-size: 2em;
+			color: white;
+			padding-top: 2.4em;
+		}
+		p {
+			font-size: 1em;
+			color:white;
+		}
+	}
+	.container {
+		max-width: 90%;
+		margin: 2em auto;
+	}
+	.content {
+		background-color:#358466;
+		img {
+			float: right;
+			max-width: 40%;
+			margin: 0 1em 0.5em 0.5em;
+		}
+		h2 {
+			font-size: 1.8em;
+			color: #5b6165;
+			margin-left: 1em;
+		}
+		p {
+			font-size:0.9em;
+			margin: 0 1em;
+		}
+	}
+	aside {
+		background-color:#A9CBBD;
+	}
+}
+// End Of Query
+
+@media screen and (min-width:650px){
+	nav {
+		height: 2em;
+		background-color: #36607D;
+		a {
+			color: white;
+		}
+		ul {
+			float: right;
+			max-width: 80%;
+			margin: 0 auto;
+			padding-top: 0.3em;
+			text-align: none;
+		}
+		li {
+			display: inline-block;
+			margin-left: 0.5em;
+			margin-right: 0.5em;
+		}
+	}
+	.jumbotron {
+		background: url('/assets/JBG_austin_flooding10.JPG');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: left bottom;
+		min-height: 12em;
+		max-height:25em;
+		h1 {
+			font-size: 2em;
+			color: white;
+			padding-top: 2.4em;
+		}
+		p {
+			font-size: 1em;
+			color:white;
+		}
+	}
+	.container {
+		max-width: 90%;
+		margin: 2em auto;
+
+	}
+	.content {
+		max-width: 65%;
+		float: right;
+		// margin: 2em auto;
+		clear: both;
+		img {
+			width: 20em;
+			margin: 0 auto;
+		}
+		h2 {
+			font-size: 1.8em;
+			color: #5b6165;
+			margin-left: 1em;
+		}
+		p {
+			clear: both;
+			font-size:0.9em;
+			margin: 0 1em;
+		}
+	}
+	aside {
+		float: left;
+		max-width: 35%;
+		height: 40em;
+		ul {
+			margin-left: 1em;
+			margin-right:1em;
+
+			li {
+				display: inline-block;
+				margin-left: 0.5em;
+			}
+		}
+	}
+
+}
+// End Of Query
 
 
 

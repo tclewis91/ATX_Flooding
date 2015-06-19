@@ -20,8 +20,12 @@ body {
   font-family: helvetica;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  line-height: 1.4em; }
+  box-sizing: border-box; }
+  body h1,
+  body h2,
+  body a,
+  body p {
+    line-height: 1.4em; }
   body a {
     text-decoration: none;
     color: #4989C1;
@@ -34,27 +38,169 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-@media screen and (max-width: 50em) {
+@media screen and (max-width: 500px) {
   nav {
-    min-height: 4em;
+    height: 2em;
     background-color: #36607D; }
+    nav a {
+      color: white; }
+    nav ul {
+      max-width: 80%;
+      margin: 0 auto;
+      padding-top: 0.3em;
+      text-align: center; }
+    nav li {
+      display: inline-block;
+      margin-left: 0.5em;
+      margin-right: 0.5em; }
 
   .jumbotron {
     background: url("/assets/JBG_austin_flooding10.JPG");
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    min-height: 12em;
+    max-height: 25em; }
     .jumbotron h1 {
-      font-size: 4em;
-      color: #A9CBBE; }
+      font-size: 2em;
+      color: white;
+      padding-top: 2.4em; }
     .jumbotron p {
-      font-size: 1.1em;
-      color: #A9CBBE; }
+      font-size: 1em;
+      color: white; }
 
-  .content img {
+  .container {
+    max-width: 90%;
+    margin: 2em auto; }
+
+  .content {
+    background-color: #358466; }
+    .content img {
+      float: right;
+      max-width: 40%;
+      margin: 0 1em 0.5em 0.5em; }
+    .content h2 {
+      font-size: 1.5em;
+      color: #5b6165;
+      margin-left: 1em; }
+    .content p {
+      font-size: 0.9em;
+      margin: 0 1em; }
+
+  aside {
+    background-color: #A9CBBD; } }
+@media screen and (min-width: 501px) {
+  nav {
+    height: 2em;
+    background-color: #36607D; }
+    nav a {
+      color: white; }
+    nav ul {
+      float: right;
+      max-width: 80%;
+      padding-top: 0.3em;
+      text-align: none; }
+    nav li {
+      display: inline-block;
+      margin-left: 0.5em;
+      margin-right: 0.5em; }
+
+  .jumbotron {
+    background: url("/assets/JBG_austin_flooding10.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    min-height: 12em;
+    max-height: 25em; }
+    .jumbotron h1 {
+      font-size: 2em;
+      color: white;
+      padding-top: 2.4em; }
+    .jumbotron p {
+      font-size: 1em;
+      color: white; }
+
+  .container {
+    max-width: 90%;
+    margin: 2em auto; }
+
+  .content {
+    background-color: #358466; }
+    .content img {
+      float: right;
+      max-width: 40%;
+      margin: 0 1em 0.5em 0.5em; }
+    .content h2 {
+      font-size: 1.8em;
+      color: #5b6165;
+      margin-left: 1em; }
+    .content p {
+      font-size: 0.9em;
+      margin: 0 1em; }
+
+  aside {
+    background-color: #A9CBBD; } }
+@media screen and (min-width: 650px) {
+  nav {
+    height: 2em;
+    background-color: #36607D; }
+    nav a {
+      color: white; }
+    nav ul {
+      float: right;
+      max-width: 80%;
+      margin: 0 auto;
+      padding-top: 0.3em;
+      text-align: none; }
+    nav li {
+      display: inline-block;
+      margin-left: 0.5em;
+      margin-right: 0.5em; }
+
+  .jumbotron {
+    background: url("/assets/JBG_austin_flooding10.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    min-height: 12em;
+    max-height: 25em; }
+    .jumbotron h1 {
+      font-size: 2em;
+      color: white;
+      padding-top: 2.4em; }
+    .jumbotron p {
+      font-size: 1em;
+      color: white; }
+
+  .container {
+    max-width: 90%;
+    margin: 2em auto; }
+
+  .content {
+    max-width: 65%;
     float: right;
-    max-width: 25%; }
-  .content h2 {
-    font-size: 2.5em;
-    color: #5b6165; } }
+    clear: both; }
+    .content img {
+      width: 20em;
+      margin: 0 auto; }
+    .content h2 {
+      font-size: 1.8em;
+      color: #5b6165;
+      margin-left: 1em; }
+    .content p {
+      clear: both;
+      font-size: 0.9em;
+      margin: 0 1em; }
+
+  aside {
+    float: left;
+    max-width: 35%;
+    height: 40em; }
+    aside ul {
+      margin-left: 1em;
+      margin-right: 1em; }
+      aside ul li {
+        display: inline-block;
+        margin-left: 0.5em; } }
 
 /*# sourceMappingURL=application.css.map */
