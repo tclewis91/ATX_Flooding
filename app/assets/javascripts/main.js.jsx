@@ -10,6 +10,7 @@ var App = Backbone.Router.extend({
         'home': 'home',
         'map': 'map',
         'forums': 'forums',
+        'login': 'login',
     },
         profile: function() {
             React.render(<Profile/>, document.querySelector('#container'));
@@ -18,7 +19,7 @@ var App = Backbone.Router.extend({
             React.render(<Home/>, document.querySelector('#container'));
     },
         forums: function() {
-            React.render(<Forums/>, document.querySelector('#container'));
+            React.render(<Forum/>, document.querySelector('#container'));
     },
 });
 
@@ -57,5 +58,7 @@ function signIn (e) {
 };
 
 function signInPush (e) {
+    if(event.keycode === 13) {
 
+    }
 };
