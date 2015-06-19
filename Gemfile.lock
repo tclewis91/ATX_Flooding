@@ -90,11 +90,7 @@ GEM
       slop (~> 3.4)
     puma (2.11.3)
       rack (>= 1.1, < 2.0)
-<<<<<<< HEAD
-    rack (1.6.2)
-=======
     rack (1.6.1)
->>>>>>> 3873eedde63c36ab091e1d1036a4f70a66dcb9f3
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.1)
@@ -186,10 +182,7 @@ DEPENDENCIES
   pg
   pry
   puma
-<<<<<<< HEAD
-=======
   rack (= 1.6.1)
->>>>>>> 3873eedde63c36ab091e1d1036a4f70a66dcb9f3
   rails (= 4.2.1)
   rails-assets-backbone!
   rails-assets-moment!
