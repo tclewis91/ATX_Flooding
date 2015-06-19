@@ -24,7 +24,7 @@ var Home = React.createClass({
 				</div>
 				<article>
 					<div className="content">
-						<img src="assets/	rbz-2013-favs-03.jpg"/>
+						<img src="assets/rbz-2013-favs-03.jpg"/>
 						<h2>headlines baby</h2>
 						<p>High Life YOLO umami, pork belly Thundercats cray disrupt taxidermy art party tilde flannel food truck Brooklyn locavore. Ethical Shoreditch bitters artisan. Ennui organic four loko, Schlitz vinyl food truck butcher scenester before they sold out Pitchfork Brooklyn lo-fi. Kitsch yr banh mi cornhole. VHS fanny pack retro authentic bicycle rights. Echo Park mustache Austin brunch. Roof party food truck ennui, shabby chic pop-up sustainable pickled umami 8-bit aesthetic lumbersexual butcher.</p>
 						<br />
