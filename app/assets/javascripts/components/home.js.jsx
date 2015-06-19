@@ -2,22 +2,6 @@ var Home = React.createClass({
 	render: function () {
 		return (
 			<section>
-				<header>
-					<nav>
-						<div className="left">
-							<img src=""/>
-						</div>
-						<div className="right">
-							<ul>
-								<li><a href="#home">Home</a></li>
-								<li><a href="#login">Login</a></li>
-								<li><a href="#forums">Forums</a></li>
-								<li><a href="#search">Search</a></li>
-								<li><a href="#profile">Profile</a></li>
-							</ul>
-						</div>
-					</nav>
-				</header>
 				<div className="jumbotron">
 					<h1>Welcome to ATX Floods.</h1>
 					<p>An look into the forgotten flood zones</p>
