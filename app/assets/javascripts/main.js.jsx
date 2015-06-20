@@ -13,16 +13,28 @@ var App = Backbone.Router.extend({
         'login': 'login',
     },
     profile: function() {
+         $('.page').hide();
+         $('#container').show();
         React.render(<Profile/>, document.querySelector('#container'));
     },
     home: function() {
+        $('.page').hide();
+        $('#container').show();
         React.render(<Home/>, document.querySelector('#container'));
     },
     forums: function() {
+        $('.page').hide();
+        $('#container').show();
         React.render(<Forum/>, document.querySelector('#container'));
     },
     login: function() {
+        $('.page').hide();
+        $('#container').show();
         React.render(<Login/>, document.querySelector('#container'));
+    },
+    map: function() {
+        $('#container').hide();
+        $('.page').show();
     }
 });
 
