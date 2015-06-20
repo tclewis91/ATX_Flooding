@@ -192,79 +192,6 @@ body {
     width: 83.333%;
     margin: 0 auto; }
 
-  .navbar {
-    background-color: #366080;
-    width: 83.333%;
-    margin: 0 auto;
-    height: 1.5em; }
-    .navbar .right {
-      float: right; }
-    .navbar li {
-      clear: both;
-      display: inline-block; }
-
-  aside {
-    width: 90%; }
-    aside .closures {
-      width: 60%;
-      overflow: hidden;
-      float: left;
-      margin-top: 1.3em;
-      margin-left: 10%; }
-      aside .closures h3 {
-        font-size: 1.2em;
-        margin-left: 0.6em;
-        margin-top: 0.4em;
-        margin-bottom: 0.8em; }
-      aside .closures a {
-        display: block;
-        margin-bottom: 0.4em;
-        color: gray;
-        font-size: 0.8em;
-        text-align: right; }
-    aside .shelters {
-      width: 60%;
-      overflow: hidden;
-      float: left;
-      margin-top: 1.3em;
-      margin-left: 10%; }
-      aside .shelters h3 {
-        font-size: 1.2em;
-        margin-left: 0.6em;
-        margin-top: 0.4em;
-        margin-bottom: 0.8em; }
-      aside .shelters ul {
-        width: 110px;
-        float: right; }
-      aside .shelters a {
-        text-align: right;
-        display: block;
-        width: 110px;
-        height: 110px;
-        margin-bottom: 0.8em;
-        color: black;
-        font-size: 1.3em; }
-      aside .shelters .one {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
-        background-size: contain;
-        background-repeat: no-repeat; }
-      aside .shelters .two {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
-        background-size: contain;
-        background-repeat: no-repeat; }
-      aside .shelters .three {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
-        background-size: contain;
-        background-repeat: no-repeat; }
-      aside .shelters .four {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
-        background-size: contain;
-        background-repeat: no-repeat; } }
-@media screen and (min-width: 700px) and (max-width: 1000px) {
-  .main {
-    width: 83.333%;
-    margin: 0 auto; }
-
   .jumbotron {
     background-image: url("/assets/lower_bolton_lake.jpg");
     background-size: cover;
@@ -395,21 +322,6 @@ body {
     color: red;
     display: none;
     font-style: italic; } }
-@media screen and (min-width: 1001px) and (max-width: 1300px) {
-  .main {
-    width: 83.333%;
-    margin: 0 auto; }
-
-  .navbar {
-    background-color: #366080;
-    width: 83.333%;
-    margin: 0 auto;
-    height: 1.5em; }
-    .navbar .right {
-      float: right; }
-    .navbar li {
-      clear: both;
-      display: inline-block; } }
 @media screen and (min-width: 1001px) and (max-width: 1300px) {
   .main {
     width: 83.333%;
