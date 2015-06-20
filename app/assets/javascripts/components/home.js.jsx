@@ -14,36 +14,9 @@ var Home = React.createClass({
 					<article>
 						<div className="content top">
 							<h2>What is going on in Austin?</h2>
-<<<<<<< HEAD
-							<img src="assets/rbz-2013-favs-03.jpg"/>
-							<p>High Life YOLO umami, pork belly Thundercats cray disrupt taxidermy art party tilde flannel food truck Brooklyn locavore. Ethical Shoreditch bitters artisan. Ennui organic four loko, Schlitz vinyl food truck butcher scenester before they sold out Pitchfork Brooklyn lofi. Kitsch yr banh mi cornhole. VHS fanny pack retro authentic bicycle rights. Echo Park mustache Austin brunch. Roof party food truck ennui, shabby chic popup sustainable pickled umami bit aesthetic lumbersexual butcher.</p>
-							<br/>
-							<p>Asymmetrical kitsch biodiesel, lofi disrupt viral DIY Carles blog bicycle rights sriracha next level tousled coldpressed food truck. Crucifix raw denim drinking vinegar, twee Pitchfork pickled cliche sriracha ennui Brooklyn churchkey. Next level skateboard fingerstache, Banksy Austin quinoa health goth deep v. Keytar Pinterest Shoreditch, bespoke actually semiotics fingerstache iPhone health goth gentrify High Life tilde. Beard four dollar toast tattooed Thundercats. Fingerstache kogi pourover, polaroid ennui chambray iPhone mixtape selfies photo booth wayfarers mumblecore cronut fap hella. Pinterest dreamcatcher fixie beard, heirloom tote bag polaroid.</p>
-						</div>
-						<div className="current">
-							<h3>Current Headlines</h3>
-							<ul>
-								<li className="one"><a href="">stuff</a></li>
-								<li className="two"><a href="">stuff</a></li>
-								<li className="three"><a href="">stuff</a></li>
-								<li className="four"><a href="">stuff</a></li>
-							</ul>
-						</div>
-						<div className="content middle">
-							<h2>What is going on in Austin?</h2>
-							<img src="assets/rbz-2013-favs-03.jpg"/>
-							<p>High Life YOLO umami, pork belly Thundercats cray disrupt taxidermy art party tilde flannel food truck Brooklyn locavore. Ethical Shoreditch bitters artisan. Ennui organic four loko, Schlitz vinyl food truck butcher scenester before they sold out Pitchfork Brooklyn lofi. Kitsch yr banh mi cornhole. VHS fanny pack retro authentic bicycle rights. Echo Park mustache Austin brunch. Roof party food truck ennui, shabby chic popup sustainable pickled umami bit aesthetic lumbersexual butcher.</p>
-							<br/>
-							<p>Asymmetrical kitsch biodiesel, lofi disrupt viral DIY Carles blog bicycle rights sriracha next level tousled coldpressed food truck. Crucifix raw denim drinking vinegar, twee Pitchfork pickled cliche sriracha ennui Brooklyn churchkey. Next level skateboard fingerstache, Banksy Austin quinoa health goth deep v. Keytar Pinterest Shoreditch, bespoke actually semiotics fingerstache iPhone health goth gentrify High Life tilde. Beard four dollar toast tattooed Thundercats. Fingerstache kogi pourover, polaroid ennui chambray iPhone mixtape selfies photo booth wayfarers mumblecore cronut fap hella. Pinterest dreamcatcher fixie beard, heirloom tote bag polaroid.</p>
-						</div>
-						<div className="content bottom">
-							<h2>What is going on in Austin?</h2>
-							<img src="assets/rbz-2013-favs-03.jpg"/>
-=======
 							<div>
 							<img src="assets/boat.jpg"/>
 							</div>
->>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
 							<p>High Life YOLO umami, pork belly Thundercats cray disrupt taxidermy art party tilde flannel food truck Brooklyn locavore. Ethical Shoreditch bitters artisan. Ennui organic four loko, Schlitz vinyl food truck butcher scenester before they sold out Pitchfork Brooklyn lofi. Kitsch yr banh mi cornhole. VHS fanny pack retro authentic bicycle rights. Echo Park mustache Austin brunch. Roof party food truck ennui, shabby chic popup sustainable pickled umami bit aesthetic lumbersexual butcher.</p>
 							<br/>
 							<p>Asymmetrical kitsch biodiesel, lofi disrupt viral DIY Carles blog bicycle rights sriracha next level tousled coldpressed food truck. Crucifix raw denim drinking vinegar, twee Pitchfork pickled cliche sriracha ennui Brooklyn churchkey. Next level skateboard fingerstache, Banksy Austin quinoa health goth deep v. Keytar Pinterest Shoreditch, bespoke actually semiotics fingerstache iPhone health goth gentrify High Life tilde. Beard four dollar toast tattooed Thundercats. Fingerstache kogi pourover, polaroid ennui chambray iPhone mixtape selfies photo booth wayfarers mumblecore cronut fap hella. Pinterest dreamcatcher fixie beard, heirloom tote bag polaroid.</p>
