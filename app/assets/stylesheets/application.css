@@ -29,7 +29,7 @@ body {
     text-align: justify; }
   body a {
     text-decoration: none;
-    color: #4989C1;
+    color: #60B6FF;
     font-weight: bold; }
 
 *,
@@ -43,13 +43,35 @@ body {
   .main {
     width: 90%;
     margin: 0 auto; }
+<<<<<<< HEAD
+=======
+
+  .navbar {
+    background-color: #366080;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 1.7em; }
+    .navbar ul {
+      margin-left: 5%;
+      margin-right: 5%; }
+    .navbar li {
+      font-size: 0.9em;
+      display: inline-block; }
+    .navbar li:last-of-type {
+      padding-right: 0; }
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
 
   .jumbotron {
     background-image: url("/assets/lower_bolton_lake.jpg");
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
+<<<<<<< HEAD
     height: 10em;
+=======
+    height: 8.6em;
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
     padding-top: 4em; }
     .jumbotron .logo {
       padding: 0 0 0 0em;
@@ -88,12 +110,21 @@ body {
     .content img {
       width: 70%;
       margin: 0 15%;
+<<<<<<< HEAD
       padding-bottom: 0.4em; }
+=======
+      padding-bottom: 0.4em;
+      -webkit-border-radius: 1.3em;
+      -moz-border-radius: 1.3em;
+      -ms-border-radius: 1.3em;
+      border-radius: 1.3em; }
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
     .content h2 {
       font-size: 1.6em;
       margin-bottom: 0.6em;
       text-align: center; }
     .content p {
+<<<<<<< HEAD
       float: left;
       font-size: 0.8em;
       width: 45%;
@@ -110,20 +141,43 @@ body {
       margin-left: 4em; }
     .current li {
       margin: 0.8em 0 0.8em 1em; }
+=======
+      font-size: 0.8em;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      text-overflow: hidden;
+      text-indent: 1.4em;
+      margin-top: 0.3em; }
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
 
   aside {
     width: 90%; }
     aside .closures {
+<<<<<<< HEAD
       width: 60%;
+=======
+      width: 90%;
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
       overflow: hidden;
       float: left;
       margin-top: 1.3em;
       margin-left: 10%; }
       aside .closures h3 {
+<<<<<<< HEAD
         font-size: 1.2em;
         margin-left: 0.6em;
         margin-top: 0.4em;
         margin-bottom: 0.8em; }
+=======
+        float: left;
+        font-size: 1.2em;
+        margin-top: 0.4em;
+        margin-bottom: 0.8em; }
+      aside .closures ul {
+        margin-top: 0.4em;
+        float: right; }
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
       aside .closures a {
         display: block;
         margin-bottom: 0.4em;
@@ -131,12 +185,17 @@ body {
         font-size: 0.8em;
         text-align: right; }
     aside .shelters {
+<<<<<<< HEAD
       width: 60%;
+=======
+      width: 90%;
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
       overflow: hidden;
       float: left;
       margin-top: 1.3em;
       margin-left: 10%; }
       aside .shelters h3 {
+<<<<<<< HEAD
         font-size: 1.2em;
         margin-left: 0.6em;
         margin-top: 0.4em;
@@ -160,6 +219,36 @@ body {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
         background-repeat: no-repeat; }
+=======
+        float: left;
+        width: 3em;
+        font-size: 1.2em;
+        margin-top: 0.4em;
+        margin-bottom: 0.8em; }
+      aside .shelters ul {
+        width: 157px;
+        float: right; }
+      aside .shelters li {
+        float: left; }
+      aside .shelters a {
+        text-align: right;
+        display: block;
+        width: 75px;
+        height: 75px;
+        color: black;
+        font-size: 0.8em; }
+      aside .shelters .one {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 0.4em;
+        margin-bottom: 0.4em; }
+      aside .shelters .two {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 0.4em; }
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
       aside .shelters .three {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
@@ -167,11 +256,30 @@ body {
       aside .shelters .four {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
+<<<<<<< HEAD
         background-repeat: no-repeat; } }
+=======
+        background-repeat: no-repeat;
+        margin-left: 0.4em; } }
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
 @media screen and (min-width: 700px) and (max-width: 1000px) {
   .main {
     width: 83.333%;
     margin: 0 auto; }
+<<<<<<< HEAD
+=======
+
+  .navbar {
+    background-color: #366080;
+    width: 83.333%;
+    margin: 0 auto;
+    height: 1.5em; }
+    .navbar .right {
+      float: right; }
+    .navbar li {
+      clear: both;
+      display: inline-block; }
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
 
   .jumbotron {
     background-image: url("/assets/lower_bolton_lake.jpg");
@@ -217,14 +325,24 @@ body {
     .content img {
       width: 45%;
       float: right;
+<<<<<<< HEAD
       padding-left: 0.4em;
       padding-bottom: 0.4em; }
+=======
+      margin-left: 0.8em;
+      margin-bottom: 0.4em;
+      -webkit-border-radius: 1.2em;
+      -moz-border-radius: 1.2em;
+      -ms-border-radius: 1.2em;
+      border-radius: 1.2em; }
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
     .content h2 {
       font-size: 1.6em;
       margin-bottom: 0.6em;
       font-variant: italic; }
     .content p {
       font-size: 0.85em;
+<<<<<<< HEAD
       width: 70%;
       text-overflow: hidden;
       text-indent: 1.4em; }
@@ -245,6 +363,13 @@ body {
       color: white;
       font-size: 1.6em; }
 
+=======
+      width: 95%;
+      margin-right: 5%;
+      text-overflow: hidden;
+      text-indent: 1.4em; }
+
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
   aside {
     float: left;
     width: 40%; }
@@ -266,12 +391,17 @@ body {
         font-size: 0.8em;
         text-align: right; }
     aside .shelters {
+<<<<<<< HEAD
       width: 60%;
+=======
+      width: 100%;
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
       overflow: hidden;
       float: left;
       margin-top: 1.3em;
       margin-left: 10%; }
       aside .shelters h3 {
+<<<<<<< HEAD
         font-size: 1.2em;
         margin-left: 0.6em;
         margin-top: 0.4em;
@@ -287,6 +417,28 @@ body {
         margin-bottom: 0.8em;
         color: black;
         font-size: 1.3em; }
+=======
+        float: left;
+        width: 3em;
+        font-size: 1.2em;
+        margin-top: 0.4em;
+        margin-bottom: 0.8em; }
+      aside .shelters ul {
+        width: 140px;
+        float: right; }
+      aside .shelters li {
+        float: left; }
+      aside .shelters a {
+        text-align: right;
+        display: block;
+        width: 60px;
+        height: 60px;
+        color: black;
+        font-size: 0.8em;
+        margin-right: 0.5em; }
+        aside .shelters a a:nth-of-type(2n) {
+          margin-right: 0em; }
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
       aside .shelters .one {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
@@ -302,11 +454,35 @@ body {
       aside .shelters .four {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
+<<<<<<< HEAD
         background-repeat: no-repeat; } }
+=======
+        background-repeat: no-repeat; }
+
+  .error {
+    font-size: 0.8em;
+    color: red;
+    display: none;
+    font-style: italic; } }
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
 @media screen and (min-width: 1001px) and (max-width: 1300px) {
   .main {
     width: 83.333%;
     margin: 0 auto; }
+<<<<<<< HEAD
+=======
+
+  .navbar {
+    background-color: #366080;
+    width: 83.333%;
+    margin: 0 auto;
+    height: 1.5em; }
+    .navbar .right {
+      float: right; }
+    .navbar li {
+      clear: both;
+      display: inline-block; }
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
 
   .jumbotron {
     background-image: url("/assets/lower_bolton_lake.jpg");
@@ -352,15 +528,28 @@ body {
     .content img {
       width: 45%;
       float: right;
+<<<<<<< HEAD
       padding-left: 0.4em;
       padding-bottom: 0.4em; }
+=======
+      margin-left: 0.8em;
+      margin-bottom: 0.4em;
+      -webkit-border-radius: 1.2em;
+      -moz-border-radius: 1.2em;
+      -ms-border-radius: 1.2em;
+      border-radius: 1.2em; }
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
     .content h2 {
       font-size: 1.6em;
       margin-bottom: 0.6em;
       font-variant: italic; }
     .content p {
       font-size: 0.85em;
+<<<<<<< HEAD
       width: 70%;
+=======
+      width: 95%;
+>>>>>>> f6004acf742b8d59cf3073cef3ac7303484346b0
       text-overflow: hidden;
       text-indent: 1.4em; }
 
