@@ -1,9 +1,9 @@
 var Map = React.createClass({
 	render: function () {
 		return (
-			<form>
-
-			</form>
+			<section>
+				<div className = "mapCanvas"></div>
+			</section>
 		);
 	}
 });

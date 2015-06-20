@@ -29,11 +29,17 @@ body {
 	font-size:$global;
 	max-width:$max;
 	font-family: helvetica;
+	// background-image: url('/assets/3332476819_d68a51552a_o.jpg');
+	// // background-size:cover;
+	// background-repeat:no-repeat;
+	// background-attachment:fixed;
+	// background-color: rgba(169,203,190,0.4);
 	h1, 
 	h2, 
 	a,
 	p {
 		line-height:1.4em;
+		text-align: justify;
 	}
 
 	@include box-sizing(border-box);
@@ -50,211 +56,594 @@ body {
   @include box-sizing(border-box);
 }
 
-@media screen and (max-width:500px){
-	nav {
-		height: 2em;
-		background-color: #36607D;
-		a {
-			color: white;
+@media screen and (min-width:400px) and (max-width:699px){
+	.main {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.jumbotron {
+		background-image: url('/assets/lower_bolton_lake.jpg');
+		background-size: cover;
+		background-position:bottom center;
+		background-repeat: no-repeat;
+		height:10em;
+		padding-top:4em;
+		.logo {
+			padding:0 0 0 0em;	
+			width: 65%;	
+			height: 2.2em;
+			// background-color: rgba(169,203,190,0.8);
+			background-color: rgba(255,255,255,0.8);
+			overflow: hidden;	
 		}
-		ul {
-			max-width: 80%;
-			margin: 0 auto;
-			padding-top: 0.3em;
+		h1 {
+			display: block;
+			font-size: 2.5em;
+			margin: -0.245em 0 0 0;
+			color:#36607D;
+			text-align: right;
+
+		}
+		.tag-line {
+			margin-top: 0.5em;
+			margin-left: 5%;
+			width: 65%;
+			height:1em;
+			// background-color: rgba(169,203,190,0.8);
+			background-color: rgba(255,255,255,0.8);
+			overflow: hidden;
+		}
+		p {
+			font-size: 0.9em;
+			margin: -0.15em 0.2em -0.3em 0;
+			color: #36607D;
+			// margin-left:55%;
+			text-align: right;
+		}
+	}
+	.container {
+		width: 100%;
+	}
+	article {
+		width: 100%;
+	}
+	.content {
+		margin:0.3em;
+		padding:1.1em;
+
+		img {
+			width: 70%;
+			margin:0 15%;
+			padding-bottom:0.4em;
+		}
+		h2 {
+			font-size: 1.6em;
+			margin-bottom:0.6em;
 			text-align: center;
-		}
-		li {
-			display: inline-block;
-			margin-left: 0.45em;
-			margin-right: 0.45em;
-		}
-	}
-	.jumbotron {
-		background: url('/assets/JBG_austin_flooding10.JPG');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: left bottom;
-		min-height: 12em;
-		max-height:25em;
-		h1 {
-			font-size: 2em;
-			color: white;
-			padding-top: 2.4em;
-		}
-		p {
-			font-size: 1em;
-			color:white;
-		}
-	}
-	.container {
-		max-width: 90%;
-		margin: 2em auto;
-	}
-	.content {
-		background-color:#358466;
-		img {
-			float: right;
-			max-width: 40%;
-			margin: 0 1em 0.5em 0.5em;
-		}
-		h2 {
-			font-size: 1.5em;
-			color: #5b6165;
-			margin-left: 1em;
-		}
-		p {
-			font-size:0.9em;
-			margin: 0 1em;
-		}
-	}
-	aside {
-		background-color: #A9CBBD;
-	}
-}
-// End Of Query
 
-@media screen and (min-width:501px){
-	nav {
-		height: 2em;
-		background-color: #36607D;
-		a {
-			color: white;
+		}
+		p {
+			float: left;
+			font-size: 0.8em;
+    		width: 45%;
+    		text-overflow: hidden;
+    		text-indent: 1.4em;
+    		margin: 0.3em;
+		}
+
+	}
+	.current {
+		// background-color:gray;
+		width: 36.35em;
+		overflow: hidden;
+
+		h3 {
+			font-size: 1.3em;
 		}
 		ul {
-			float: right;
-			max-width: 80%;
-			padding-top: 0.3em;
-			text-align: none;
+			margin-left: 4em;
 		}
 		li {
-			display: inline-block;
-			margin-left: 0.5em;
-			margin-right: 0.5em;
+			// float: left;
+			margin: 0.8em 0 0.8em 1em;
 		}
-	}
-	.jumbotron {
-		background: url('/assets/JBG_austin_flooding10.JPG');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: left bottom;
-		min-height: 12em;
-		max-height:25em;
-		h1 {
-			font-size: 2em;
-			color: white;
-			padding-top: 2.4em;
-		}
-		p {
-			font-size: 1em;
-			color:white;
-		}
-	}
-	.container {
-		max-width: 90%;
-		margin: 2em auto;
-	}
-	.content {
-		background-color:#358466;
-		img {
-			float: right;
-			max-width: 40%;
-			margin: 0 1em 0.5em 0.5em;
-		}
-		h2 {
-			font-size: 1.8em;
-			color: #5b6165;
-			margin-left: 1em;
-		}
-		p {
-			font-size:0.9em;
-			margin: 0 1em;
-		}
+		// a {
+		// 	display: inline-block;
+		// 	width: 110px;
+		// 	height:110px;
+		// 	color: white;
+		// 	font-size: 1.6em;
+		// }
+		// .one {
+		// 	background-image: url('/assets/tile.jpg');
+		// 	background-size:contain;
+		// 	background-repeat:no-repeat;
+		// }
+		// .two {
+		// 	background-image: url('/assets/tile.jpg');
+		// 	background-size:contain;
+		// 	background-repeat:no-repeat;
+		// }
+		// .three {
+		// 	background-image: url('/assets/tile.jpg');
+		// 	background-size:contain;
+		// 	background-repeat:no-repeat;
+		// }
+		// .four {
+		// 	background-image: url('/assets/tile.jpg');
+		// 	background-size:contain;
+		// 	background-repeat:no-repeat;
+		// }
 	}
 	aside {
-		background-color:#A9CBBD;
-	}
-}
-// End Of Query
-
-@media screen and (min-width:650px){
-	nav {
-		height: 2em;
-		background-color: #36607D;
-		a {
-			color: white;
+	// 	float: left;
+		width:90%;
+		.closures {
+			// background-color:gray;
+			width: 60%;
+			overflow: hidden;
+			float: left;
+			margin-top: 1.3em;
+			margin-left: 10%;
+			h3 {
+				font-size: 1.2em;
+				margin-left: 0.6em;
+				margin-top: 0.4em;
+				margin-bottom: 0.8em;
+			}
+			a {
+				display: block;
+				margin-bottom: 0.4em;
+				color:gray;
+				font-size: 0.8em;
+				text-align: right;
+			}
 		}
-		ul {
-			float: right;
-			max-width: 80%;
-			margin: 0 auto;
-			padding-top: 0.3em;
-			text-align: none;
-		}
-		li {
-			display: inline-block;
-			margin-left: 0.5em;
-			margin-right: 0.5em;
-		}
-	}
-	.jumbotron {
-		background: url('/assets/JBG_austin_flooding10.JPG');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: left bottom;
-		min-height: 12em;
-		max-height:25em;
-		h1 {
-			font-size: 2em;
-			color: white;
-			padding-top: 2.4em;
-		}
-		p {
-			font-size: 1em;
-			color:white;
-		}
-	}
-	.container {
-		max-width: 90%;
-		margin: 2em auto;
-
-	}
-	.content {
-		max-width: 65%;
-		float: right;
-		// margin: 2em auto;
-		clear: both;
-		img {
-			width: 20em;
-			margin: 0 auto;
-		}
-		h2 {
-			font-size: 1.8em;
-			color: #5b6165;
-			margin-left: 1em;
-		}
-		p {
-			clear: both;
-			font-size:0.9em;
-			margin: 0 1em;
-		}
-	}
-	aside {
-		float: left;
-		max-width: 35%;
-		height: 40em;
-		ul {
-			margin-left: 1em;
-			margin-right:1em;
-
-			li {
-				display: inline-block;
-				margin-left: 0.5em;
+		.shelters {
+			// background-color:gray;
+			width: 60%;
+			overflow: hidden;
+			float: left;
+			margin-top: 1.3em;
+			margin-left: 10%;
+			h3 {
+				font-size: 1.2em;
+				margin-left: 0.6em;
+				margin-top: 0.4em;
+				margin-bottom: 0.8em;
+			}
+			ul {
+				width: 110px;
+				float: right;
+			}
+			a {
+				text-align: right;
+				display: block;
+				width: 110px;
+				height:110px;
+				margin-bottom: 0.8em;
+				color:black;
+				font-size: 1.3em;
+			}
+			.one {
+				background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
+				background-size:contain;
+				background-repeat:no-repeat;
+			}
+			.two {
+				background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
+				background-size:contain;
+				background-repeat:no-repeat;
+			}
+			.three {
+				background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
+				background-size:contain;
+				background-repeat:no-repeat;
+			}
+			.four {
+				background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
+				background-size:contain;
+				background-repeat:no-repeat;
 			}
 		}
 	}
 
 }
-// End Of Query
+// End of Query
+
+@media screen and (min-width:700px) and (max-width:1000px){
+	.main {
+		width: 83.333%;
+		margin: 0 auto;
+	}
+
+	.jumbotron {
+		background-image: url('/assets/lower_bolton_lake.jpg');
+		background-size: cover;
+		background-position:bottom center;
+		height:14em;
+		padding-top:6em;
+		.logo {
+			padding:0 0 0 2em;	
+			width: 60%;	
+			height: 3.3em;
+			// background-color: rgba(169,203,190,0.8);
+			background-color: rgba(255,255,255,0.8);
+			overflow: hidden;	
+		}
+		h1 {
+			display: block;
+			font-size: 3.7em;
+			margin: -0.245em 0 -1em 0;
+			color:#36607D;
+			text-align: right;
+
+		}
+		.tag-line {
+			margin-top: 0.5em;
+			margin-left: 10%;
+			width: 60%;
+			height:1.45em;
+			// background-color: rgba(169,203,190,0.8);
+			background-color: rgba(255,255,255,0.8);
+			overflow: hidden;
+		}
+		p {
+			font-size: 1.1em;
+			margin: -0.1em 0.2em -0.3em 0;
+			color: #36607D;
+			// margin-left:55%;
+			text-align: right;
+		}
+	}
+	.container {
+		width: 100%;
+	}
+	article {
+		width: 60%;
+		float: right;
+	}
+	.content {
+		margin:0.3em;
+		padding:1.1em;
+
+		img {
+			width: 45%;
+			float: right;
+			padding-left: 0.4em;
+			padding-bottom:0.4em;
+		}
+		h2 {
+			font-size: 1.6em;
+			margin-bottom:0.6em;
+			font-variant: italic;
+
+		}
+		p {
+			font-size: 0.85em;
+    		width: 70%;
+    		text-overflow: hidden;
+    		text-indent: 1.4em;
+		}
+
+	}
+	.current {
+		// background-color:gray;
+		width: 36.35em;
+		overflow: hidden;
+
+		h3 {
+			font-size: 1.3em;
+		}
+		ul {
+			margin-left: 4em;
+		}
+		li {
+			// float: left;
+			margin: 0.8em 0 0.8em 1em;
+		}
+		a {
+			display: inline-block;
+			width: 110px;
+			height:110px;
+			color: white;
+			font-size: 1.6em;
+		}
+		// .one {
+		// 	background-image: url('/assets/tile.jpg');
+		// 	background-size:contain;
+		// 	background-repeat:no-repeat;
+		// }
+		// .two {
+		// 	background-image: url('/assets/tile.jpg');
+		// 	background-size:contain;
+		// 	background-repeat:no-repeat;
+		// }
+		// .three {
+		// 	background-image: url('/assets/tile.jpg');
+		// 	background-size:contain;
+		// 	background-repeat:no-repeat;
+		// }
+		// .four {
+		// 	background-image: url('/assets/tile.jpg');
+		// 	background-size:contain;
+		// 	background-repeat:no-repeat;
+		// }
+	}
+	aside {
+		float: left;
+		width:40%;
+		.closures {
+			// background-color:gray;
+			width: 60%;
+			overflow: hidden;
+			float: left;
+			margin-top: 1.3em;
+			margin-left: 10%;
+			h3 {
+				font-size: 1.2em;
+				margin-left: 0.6em;
+				margin-top: 0.4em;
+				margin-bottom: 0.8em;
+			}
+			a {
+				display: block;
+				margin-bottom: 0.4em;
+				color:gray;
+				font-size: 0.8em;
+				text-align: right;
+			}
+		}
+		.shelters {
+			// background-color:gray;
+			width: 60%;
+			overflow: hidden;
+			float: left;
+			margin-top: 1.3em;
+			margin-left: 10%;
+			h3 {
+				font-size: 1.2em;
+				margin-left: 0.6em;
+				margin-top: 0.4em;
+				margin-bottom: 0.8em;
+			}
+			ul {
+				width: 110px;
+				float: right;
+			}
+			a {
+				text-align: right;
+				display: block;
+				width: 110px;
+				height:110px;
+				margin-bottom: 0.8em;
+				color:black;
+				font-size: 1.3em;
+			}
+			.one {
+				background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
+				background-size:contain;
+				background-repeat:no-repeat;
+			}
+			.two {
+				background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
+				background-size:contain;
+				background-repeat:no-repeat;
+			}
+			.three {
+				background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
+				background-size:contain;
+				background-repeat:no-repeat;
+			}
+			.four {
+				background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
+				background-size:contain;
+				background-repeat:no-repeat;
+			}
+		}
+	}
+
+}
+// End of Query
+
+
+
+@media screen and (min-width:1001px) and (max-width:1300px){
+	.main {
+		width: 83.333%;
+		margin: 0 auto;
+	}
+
+	.jumbotron {
+		background-image: url('/assets/lower_bolton_lake.jpg');
+		background-size: cover;
+		background-position:bottom center;
+		height:20em;
+		padding-top:6em;
+		.logo {
+			padding:0 0 0 2em;	
+			width: 60%;	
+			height: 3.8em;
+			// background-color: rgba(169,203,190,0.8);
+			background-color: rgba(255,255,255,0.8);
+			overflow: hidden;	
+		}
+		h1 {
+			display: block;
+			font-size: 5em;
+			margin: -0.31em 0 -0.5em 0;
+			color:#36607D;
+			text-align: right;
+
+		}
+		.tag-line {
+			margin-top: 0.5em;
+			margin-left: 10%;
+			width: 60%;
+			height:1.45em;
+			// background-color: rgba(169,203,190,0.8);
+			background-color: rgba(255,255,255,0.8);
+			overflow: hidden;
+		}
+		p {
+			font-size: 1.35em;
+			margin: -0.17em 0.2em -0.3em 0;
+			color: #36607D;
+			// margin-left:55%;
+			text-align: right;
+		}
+	}
+	.container {
+		width: 100%;
+	}
+	article {
+		width: 60%;
+		float: right;
+	}
+	.content {
+		margin:0.3em;
+		padding:1.1em;
+
+		img {
+			width: 45%;
+			float: right;
+			padding-left: 0.4em;
+			padding-bottom:0.4em;
+		}
+		h2 {
+			font-size: 1.6em;
+			margin-bottom:0.6em;
+			font-variant: italic;
+
+		}
+		p {
+			font-size: 0.85em;
+    		width: 70%;
+    		text-overflow: hidden;
+    		text-indent: 1.4em;
+		}
+
+	}
+	.current {
+		// background-color:gray;
+		width: 36.35em;
+		overflow: hidden;
+
+		h3 {
+			font-size: 1.3em;
+		}
+		ul {
+			margin-left: 4em;
+		}
+		li {
+			float: left;
+			margin: 0.8em 0 0.8em 1em;
+		}
+		a {
+			display: inline-block;
+			width: 110px;
+			height:110px;
+			color: white;
+			font-size: 1.6em;
+		}
+		.one {
+			background-image: url('/assets/tile.jpg');
+			background-size:contain;
+			background-repeat:no-repeat;
+		}
+		.two {
+			background-image: url('/assets/tile.jpg');
+			background-size:contain;
+			background-repeat:no-repeat;
+		}
+		.three {
+			background-image: url('/assets/tile.jpg');
+			background-size:contain;
+			background-repeat:no-repeat;
+		}
+		.four {
+			background-image: url('/assets/tile.jpg');
+			background-size:contain;
+			background-repeat:no-repeat;
+		}
+	}
+	aside {
+		float: left;
+		width:40%;
+		.closures {
+			// background-color:gray;
+			width: 60%;
+			overflow: hidden;
+			float: left;
+			margin-top: 1.3em;
+			margin-left: 10%;
+			h3 {
+				font-size: 1.2em;
+				margin-left: 0.6em;
+				margin-top: 0.4em;
+				margin-bottom: 0.8em;
+			}
+			a {
+				display: block;
+				margin-bottom: 0.4em;
+				color:gray;
+				font-size: 0.8em;
+				text-align: right;
+			}
+		}
+		.shelters {
+			// background-color:gray;
+			width: 60%;
+			overflow: hidden;
+			float: left;
+			margin-top: 1.3em;
+			margin-left: 10%;
+			h3 {
+				font-size: 1.2em;
+				margin-left: 0.6em;
+				margin-top: 0.4em;
+				margin-bottom: 0.8em;
+			}
+			ul {
+				width: 110px;
+				float: right;
+			}
+			a {
+				text-align: right;
+				display: block;
+				width: 110px;
+				height:110px;
+				margin-bottom: 0.8em;
+				color:black;
+				font-size: 1.3em;
+			}
+			.one {
+				background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
+				background-size:contain;
+				background-repeat:no-repeat;
+			}
+			.two {
+				background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
+				background-size:contain;
+				background-repeat:no-repeat;
+			}
+			.three {
+				background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
+				background-size:contain;
+				background-repeat:no-repeat;
+			}
+			.four {
+				background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
+				background-size:contain;
+				background-repeat:no-repeat;
+			}
+		}
+	}
+
+}
+// End of Query
+
 
 
 

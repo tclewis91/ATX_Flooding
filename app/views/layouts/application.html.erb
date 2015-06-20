@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style type="text/css">
+      html, body, #mapCanvas { height: 300px; margin: 0; padding: 0;}
+    </style>
+	<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc2XC-pGKkj3gdmmDDkXWzC1uBuVbM1_A">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: { lat: 30.30, lng: -97.70},
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById('mapCanvas'),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
   <title>ATX_Flooding</title>
   <%= stylesheet_link_tag 'application', media: 'all' %>
 </head>
 <body>
 	<header>
 		<nav>
-			<div className="left">
+			<div class="left">
 				<img src=""/>
 			</div>
-			<div className="right">
+			<div class="right">
 				<ul>
 					<li><a href="#home">Home</a></li>
 					<li><a href="#login">Login</a></li>
+					<li><a href="#map">Map</a></li>
 					<li><a href="#forums">Forums</a></li>
 					<li><a href="#search">Search</a></li>
 					<li><a href="#profile">Profile</a></li>
@@ -21,6 +39,9 @@
 			</div>
 		</nav>
 	</header>
+	<section class = "page">
+		<div id = "mapCanvas"></div>
+	</section>
 	<div id='container'>
 
 	</div>
