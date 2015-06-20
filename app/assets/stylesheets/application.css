@@ -38,169 +38,157 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-@media screen and (max-width: 500px) {
-  nav {
-    height: 2em;
-    background-color: #36607D; }
-    nav a {
-      color: white; }
-    nav ul {
-      max-width: 80%;
-      margin: 0 auto;
-      padding-top: 0.3em;
-      text-align: center; }
-    nav li {
-      display: inline-block;
-      margin-left: 0.45em;
-      margin-right: 0.45em; }
+@media screen and (min-width: 1000px) {
+  .main {
+    width: 83.333%;
+    margin: 0 auto; }
 
   .jumbotron {
-    background: url("/assets/JBG_austin_flooding10.JPG");
+    background-image: url("/assets/lower_bolton_lake.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    min-height: 12em;
-    max-height: 25em; }
+    background-position: bottom center;
+    height: 20em;
+    padding-top: 6em; }
+    .jumbotron .logo {
+      padding: 0 0 0 2em;
+      width: 60%;
+      height: 3.8em;
+      background-color: rgba(255, 255, 255, 0.8);
+      overflow: hidden; }
     .jumbotron h1 {
-      font-size: 2em;
-      color: white;
-      padding-top: 2.4em; }
+      display: block;
+      font-size: 5em;
+      margin: -0.3em 0 -0.5em 0;
+      color: #36607D;
+      text-align: right; }
+    .jumbotron .tag-line {
+      margin-top: 0.5em;
+      margin-left: 10%;
+      width: 60%;
+      height: 1.45em;
+      background-color: rgba(255, 255, 255, 0.8);
+      overflow: hidden; }
     .jumbotron p {
-      font-size: 1em;
-      color: white; }
+      font-size: 1.35em;
+      margin: -0.2em 0.2em -0.3em 0;
+      color: #36607D;
+      text-align: right; }
 
   .container {
-    max-width: 90%;
-    margin: 2em auto; }
+    width: 100%; }
+
+  article {
+    width: 60%;
+    float: right; }
 
   .content {
-    background-color: #358466; }
+    margin: 0.3em;
+    padding: 1.1em; }
     .content img {
+      width: 45%;
       float: right;
-      max-width: 40%;
-      margin: 0 1em 0.5em 0.5em; }
+      padding-left: 0.4em;
+      padding-bottom: 0.4em; }
     .content h2 {
-      font-size: 1.5em;
-      color: #5b6165;
-      margin-left: 1em; }
+      font-size: 1.6em;
+      margin-bottom: 0.6em;
+      font-variant: italic; }
     .content p {
-      font-size: 0.9em;
-      margin: 0 1em; }
+      font-size: 0.85em;
+      width: 70%;
+      text-overflow: hidden;
+      text-indent: 1.4em; }
 
-  aside {
-    background-color: #A9CBBD; } }
-@media screen and (min-width: 501px) {
-  nav {
-    height: 2em;
-    background-color: #36607D; }
-    nav a {
-      color: white; }
-    nav ul {
-      float: right;
-      max-width: 80%;
-      padding-top: 0.3em;
-      text-align: none; }
-    nav li {
+  .current {
+    width: 36.35em;
+    overflow: hidden; }
+    .current h3 {
+      font-size: 1.3em; }
+    .current ul {
+      margin-left: 4em; }
+    .current li {
+      float: left;
+      margin: 0.8em 0 0.8em 1em; }
+    .current a {
       display: inline-block;
-      margin-left: 0.5em;
-      margin-right: 0.5em; }
-
-  .jumbotron {
-    background: url("/assets/JBG_austin_flooding10.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    min-height: 12em;
-    max-height: 25em; }
-    .jumbotron h1 {
-      font-size: 2em;
+      width: 110px;
+      height: 110px;
       color: white;
-      padding-top: 2.4em; }
-    .jumbotron p {
-      font-size: 1em;
-      color: white; }
-
-  .container {
-    max-width: 90%;
-    margin: 2em auto; }
-
-  .content {
-    background-color: #358466; }
-    .content img {
-      float: right;
-      max-width: 40%;
-      margin: 0 1em 0.5em 0.5em; }
-    .content h2 {
-      font-size: 1.8em;
-      color: #5b6165;
-      margin-left: 1em; }
-    .content p {
-      font-size: 0.9em;
-      margin: 0 1em; }
-
-  aside {
-    background-color: #A9CBBD; } }
-@media screen and (min-width: 650px) {
-  nav {
-    height: 2em;
-    background-color: #36607D; }
-    nav a {
-      color: white; }
-    nav ul {
-      float: right;
-      max-width: 80%;
-      margin: 0 auto;
-      padding-top: 0.3em;
-      text-align: none; }
-    nav li {
-      display: inline-block;
-      margin-left: 0.5em;
-      margin-right: 0.5em; }
-
-  .jumbotron {
-    background: url("/assets/JBG_austin_flooding10.JPG");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    min-height: 12em;
-    max-height: 25em; }
-    .jumbotron h1 {
-      font-size: 2em;
-      color: white;
-      padding-top: 2.4em; }
-    .jumbotron p {
-      font-size: 1em;
-      color: white; }
-
-  .container {
-    max-width: 90%;
-    margin: 2em auto; }
-
-  .content {
-    max-width: 65%;
-    float: right;
-    clear: both; }
-    .content img {
-      width: 20em;
-      margin: 0 auto; }
-    .content h2 {
-      font-size: 1.8em;
-      color: #5b6165;
-      margin-left: 1em; }
-    .content p {
-      clear: both;
-      font-size: 0.9em;
-      margin: 0 1em; }
+      font-size: 1.6em; }
+    .current .one {
+      background-image: url("/assets/tile.jpg");
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .current .two {
+      background-image: url("/assets/tile.jpg");
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .current .three {
+      background-image: url("/assets/tile.jpg");
+      background-size: contain;
+      background-repeat: no-repeat; }
+    .current .four {
+      background-image: url("/assets/tile.jpg");
+      background-size: contain;
+      background-repeat: no-repeat; }
 
   aside {
     float: left;
-    max-width: 35%;
-    height: 40em; }
-    aside ul {
-      margin-left: 1em;
-      margin-right: 1em; }
-      aside ul li {
-        display: inline-block;
-        margin-left: 0.5em; } }
+    width: 40%; }
+    aside .closures {
+      width: 60%;
+      overflow: hidden;
+      float: left;
+      margin-top: 1.3em;
+      margin-left: 10%; }
+      aside .closures h3 {
+        font-size: 1.2em;
+        margin-left: 0.6em;
+        margin-top: 0.4em;
+        margin-bottom: 0.8em; }
+      aside .closures a {
+        display: block;
+        margin-bottom: 0.4em;
+        color: gray;
+        font-size: 0.8em;
+        text-align: right; }
+    aside .shelters {
+      width: 60%;
+      overflow: hidden;
+      float: left;
+      margin-top: 1.3em;
+      margin-left: 10%; }
+      aside .shelters h3 {
+        font-size: 1.2em;
+        margin-left: 0.6em;
+        margin-top: 0.4em;
+        margin-bottom: 0.8em; }
+      aside .shelters ul {
+        width: 110px;
+        float: right; }
+      aside .shelters a {
+        text-align: right;
+        display: block;
+        width: 110px;
+        height: 110px;
+        margin-bottom: 0.8em;
+        color: black;
+        font-size: 1.3em; }
+      aside .shelters .one {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
+        background-size: contain;
+        background-repeat: no-repeat; }
+      aside .shelters .two {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
+        background-size: contain;
+        background-repeat: no-repeat; }
+      aside .shelters .three {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
+        background-size: contain;
+        background-repeat: no-repeat; }
+      aside .shelters .four {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
+        background-size: contain;
+        background-repeat: no-repeat; } }
 
 /*# sourceMappingURL=application.css.map */
