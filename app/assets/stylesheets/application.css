@@ -172,25 +172,56 @@ body {
         background-size: contain;
         background-repeat: no-repeat;
         margin-right: 0.4em;
-        margin-bottom: 0.4em; }
+        margin-bottom: 0.4em;
+        -webkit-border-radius: 9em;
+        -moz-border-radius: 9em;
+        -ms-border-radius: 9em;
+        border-radius: 9em; }
       aside .shelters .two {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
         background-repeat: no-repeat;
-        margin-bottom: 0.4em; }
+        margin-bottom: 0.4em;
+        -webkit-border-radius: 9em;
+        -moz-border-radius: 9em;
+        -ms-border-radius: 9em;
+        border-radius: 9em; }
       aside .shelters .three {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        -webkit-border-radius: 9em;
+        -moz-border-radius: 9em;
+        -ms-border-radius: 9em;
+        border-radius: 9em; }
       aside .shelters .four {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
         background-repeat: no-repeat;
-        margin-left: 0.4em; } }
+        margin-left: 0.4em;
+        -webkit-border-radius: 9em;
+        -moz-border-radius: 9em;
+        -ms-border-radius: 9em;
+        border-radius: 9em; } }
 @media screen and (min-width: 700px) and (max-width: 1000px) {
   .main {
     width: 83.333%;
     margin: 0 auto; }
+
+  .navbar {
+    background-color: #366080;
+    width: 83.333%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1.7em; }
+    .navbar ul {
+      margin-left: 5%;
+      margin-right: 5%; }
+    .navbar li {
+      font-size: 0.9em;
+      display: inline-block; }
+    .navbar li:last-of-type {
+      padding-right: 0; }
 
   .jumbotron {
     background-image: url("/assets/lower_bolton_lake.jpg");
@@ -255,18 +286,19 @@ body {
 
   aside {
     float: left;
-    width: 40%; }
+    width: 30%; }
     aside .closures {
-      width: 60%;
+      width: 95%;
       overflow: hidden;
       float: left;
       margin-top: 1.3em;
       margin-left: 10%; }
       aside .closures h3 {
+        float: left;
         font-size: 1.2em;
-        margin-left: 0.6em;
-        margin-top: 0.4em;
-        margin-bottom: 0.8em; }
+        margin-top: 0.4em; }
+      aside .closures ul {
+        float: right; }
       aside .closures a {
         display: block;
         margin-bottom: 0.4em;
@@ -274,40 +306,50 @@ body {
         font-size: 0.8em;
         text-align: right; }
     aside .shelters {
-      width: 100%;
+      width: 95%;
       overflow: hidden;
       float: left;
       margin-top: 1.3em;
       margin-left: 10%; }
       aside .shelters h3 {
         float: left;
-        width: 5em;
         font-size: 1.2em;
         margin-top: 0.4em;
         margin-bottom: 0.8em; }
       aside .shelters ul {
-        width: 140px;
-        float: right; }
+        width: 157px;
+        clear: both; }
       aside .shelters li {
-        float: left;
-        margin-bottom: 0.5em; }
+        float: left; }
       aside .shelters a {
+        text-align: center;
+        padding: 0.5em;
         display: block;
-        width: 4.7em;
-        height: 4.7em;
+        width: 75px;
+        height: 75px;
         color: black;
-        font-size: 0.8em;
-        margin-right: 0.5em; }
-        aside .shelters a a:nth-of-type(2n) {
-          margin-right: 0em; }
+        font-size: 0.8em; }
+      aside .shelters .shelter-circles {
+        float: right; }
+      aside .shelters .one,
+      aside .shelters .two,
+      aside .shelters .three,
+      aside .shelters .four {
+        -webkit-border-radius: 3em;
+        -moz-border-radius: 3em;
+        -ms-border-radius: 3em;
+        border-radius: 3em; }
       aside .shelters .one {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        margin-right: 0.4em;
+        margin-bottom: 0.4em; }
       aside .shelters .two {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        margin-bottom: 0.4em; }
       aside .shelters .three {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
@@ -315,7 +357,8 @@ body {
       aside .shelters .four {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        margin-left: 0.4em; }
 
   .error {
     font-size: 0.8em;
@@ -326,6 +369,21 @@ body {
   .main {
     width: 83.333%;
     margin: 0 auto; }
+
+  .navbar {
+    background-color: #366080;
+    width: 83.333%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1.7em; }
+    .navbar ul {
+      margin-left: 5%;
+      margin-right: 5%; }
+    .navbar li {
+      font-size: 0.9em;
+      display: inline-block; }
+    .navbar li:last-of-type {
+      padding-right: 0; }
 
   .jumbotron {
     background-image: url("/assets/lower_bolton_lake.jpg");
@@ -387,53 +445,23 @@ body {
       text-overflow: hidden;
       text-indent: 1.4em; }
 
-  .current {
-    width: 36.35em;
-    overflow: hidden; }
-    .current h3 {
-      font-size: 1.3em; }
-    .current ul {
-      margin-left: 4em; }
-    .current li {
-      float: left;
-      margin: 0.8em 0 0.8em 1em; }
-    .current a {
-      display: inline-block;
-      width: 110px;
-      height: 110px;
-      color: white;
-      font-size: 1.6em; }
-    .current .one {
-      background-image: url("/assets/tile.jpg");
-      background-size: contain;
-      background-repeat: no-repeat; }
-    .current .two {
-      background-image: url("/assets/tile.jpg");
-      background-size: contain;
-      background-repeat: no-repeat; }
-    .current .three {
-      background-image: url("/assets/tile.jpg");
-      background-size: contain;
-      background-repeat: no-repeat; }
-    .current .four {
-      background-image: url("/assets/tile.jpg");
-      background-size: contain;
-      background-repeat: no-repeat; }
-
   aside {
     float: left;
-    width: 40%; }
+    width: 30%; }
     aside .closures {
-      width: 60%;
+      width: 95%;
       overflow: hidden;
       float: left;
       margin-top: 1.3em;
       margin-left: 10%; }
       aside .closures h3 {
+        float: left;
         font-size: 1.2em;
-        margin-left: 0.6em;
         margin-top: 0.4em;
         margin-bottom: 0.8em; }
+      aside .closures ul {
+        margin-top: 0.4em;
+        float: right; }
       aside .closures a {
         display: block;
         margin-bottom: 0.4em;
@@ -441,35 +469,50 @@ body {
         font-size: 0.8em;
         text-align: right; }
     aside .shelters {
-      width: 60%;
+      width: 95%;
       overflow: hidden;
       float: left;
       margin-top: 1.3em;
       margin-left: 10%; }
       aside .shelters h3 {
+        float: left;
         font-size: 1.2em;
-        margin-left: 0.6em;
         margin-top: 0.4em;
         margin-bottom: 0.8em; }
       aside .shelters ul {
-        width: 110px;
-        float: right; }
+        width: 157px;
+        clear: both; }
+      aside .shelters li {
+        float: left; }
       aside .shelters a {
-        text-align: right;
+        text-align: center;
+        padding: 0.5em;
         display: block;
-        width: 110px;
-        height: 110px;
-        margin-bottom: 0.8em;
+        width: 75px;
+        height: 75px;
         color: black;
-        font-size: 1.3em; }
+        font-size: 0.8em; }
+      aside .shelters .shelter-circles {
+        float: right; }
+      aside .shelters .one,
+      aside .shelters .two,
+      aside .shelters .three,
+      aside .shelters .four {
+        -webkit-border-radius: 3em;
+        -moz-border-radius: 3em;
+        -ms-border-radius: 3em;
+        border-radius: 3em; }
       aside .shelters .one {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        margin-right: 0.4em;
+        margin-bottom: 0.4em; }
       aside .shelters .two {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
-        background-repeat: no-repeat; }
+        background-repeat: no-repeat;
+        margin-bottom: 0.4em; }
       aside .shelters .three {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
@@ -477,6 +520,7 @@ body {
       aside .shelters .four {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        margin-left: 0.4em; } }
 
 /*# sourceMappingURL=application.css.map */

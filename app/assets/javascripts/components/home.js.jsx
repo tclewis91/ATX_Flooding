@@ -33,12 +33,14 @@ var Home = React.createClass({
 						</div>
 						<div className="box shelters">
 							<h3>Shelters &amp; Soup Kitchens</h3>
-							<ul>
-								<li className="one"><a href="">ARCH</a></li>
-								<li className="two"><a href="">YMCA</a></li>
-								<li className="three"><a href="">Austin Convention Center</a></li>
-								<li className="four"><a href="">Erwin Center</a></li>
-							</ul>
+							<div className="shelter-circles">
+								<ul>
+									<li className="one"><a href="">ARCH</a></li>
+									<li className="two"><a href="">YMCA</a></li>
+									<li className="three"><a href="">Austin Convention Center</a></li>
+									<li className="four"><a href="">Erwin<br/>Center</a></li>
+								</ul>
+							</div>
 						</div>
 
 					</aside>
