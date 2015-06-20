@@ -42,8 +42,6 @@ var app = new App();
 Backbone.history.start();
 app.navigate('edit');
 
-React.render(<Search/>, document.getElementById('search'));
-
 $('.logButton').click(logIn);
 $('.userBox').keyup(logInPush);
 $('.passBox').keyup(logInPush);
@@ -76,50 +74,42 @@ function signIn (e) {
     var email = $('.email').val();
     var password = $('.password').val();
     var username = $('.username').val();
-    if ($name.val() === "") {
-            $('#name-error').html("*Please insert a valid name");
-            console.log('why');
+    if (firstName === "") {
+            $('.firstError').show();
         } else {
-            $('#name-error').html("");
+            $('.firstError').hide();
+        }
+        if (lastName === "") {
+            $('.lastError').show();
+        } else {
+            $('.lastError').hide();
+        }
+        if (password === "") {
+            $('.passError').show();
+        } else {
+            $('.passError').hide();
         }
         var atSym = false;
         var eDotCom = false;
         var e;
-        if ('@' in $email.val().split()) {
+        if ('@' in $email.split()) {
             atSym = true;
         }
         if (atSym === false) {
-            $('#email-error').html("*Please insert a valid email address");
+            $('.emailError').show();
         } else {
-            $('#email-error').html("");
+            $('.emailError').hide();
         }
-        if ($email.val().substring($email.val().length-4) === ".com") {
+        if (email.substring(email.length-4) === ".com") {
             eDotCom = true;
         }
         if (eDotCom === false) {
-            $('#email-error').html("*Please insert a valid email address");
+            $('.emailError').show();
         } else {
-            $('#email-error').html("");
+            $('.emailError').hide();
         }
         var httpPresent = false;
         var dotCom = false;
-
-        if ($website.val().substring($website.val().length-4) === ".com") {
-            dotCom = true;
-        }
-        if (dotCom === false && httpPresent === false) {
-            $('#website-error').html("*Please insert a valid website");
-        } else {
-            $('#website-error').html("");
-        }
-        if ($website.val().substring(0, 7) === "http://") {
-            httpPresent = true;
-        }
-        if ($('#website-error').html() === "" && $('#email-error').html() === "" && $('#name-error').html() === "") {
-            console.log('??');
-            $('.contact-box').hide();
-            $('#success').show();
-        }
 };
 
 function signInPush (e) {
