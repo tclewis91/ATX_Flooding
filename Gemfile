@@ -16,6 +16,7 @@ gem 'devise', '~> 3.5.1'
 gem 'rack', '1.6.1'
 
 
+
 group :development, :test do
   gem "better_errors"
   gem 'binding_of_caller'
