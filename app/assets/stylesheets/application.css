@@ -292,7 +292,7 @@ body {
       margin-left: 10%; }
       aside .shelters h3 {
         float: left;
-        width: 3em;
+        width: 5em;
         font-size: 1.2em;
         margin-top: 0.4em;
         margin-bottom: 0.8em; }
@@ -300,12 +300,12 @@ body {
         width: 140px;
         float: right; }
       aside .shelters li {
-        float: left; }
+        float: left;
+        margin-bottom: 0.5em; }
       aside .shelters a {
-        text-align: right;
         display: block;
-        width: 60px;
-        height: 60px;
+        width: 4.7em;
+        height: 4.7em;
         color: black;
         font-size: 0.8em;
         margin-right: 0.5em; }
