@@ -18,6 +18,7 @@
 
 $global:0.625em;
 $max:130em;
+$curve:0.8em;
 
 @mixin box-sizing($box-model) {
   -webkit-box-sizing: $box-model; // Safari <= 5
@@ -29,6 +30,14 @@ $max:130em;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
           border-radius: $radius;
+}
+@mixin border-radius2($radius) {
+	-webkit-border-bottom-right-radius: $radius;
+-webkit-border-bottom-left-radius: $radius;
+-moz-border-radius-bottomright: $radius;
+-moz-border-radius-bottomleft: $radius;
+border-bottom-right-radius: $radius;
+border-bottom-left-radius: $radius;
 }
 
 
@@ -50,10 +59,18 @@ body {
 	}
 
 	@include box-sizing(border-box);
+	p,
+	a {
+		font-family: "lexia", serif;
+	}
+	h2, 
+	h3 {
+		color: #A67B4D;
+		font-family: "proxima-nova",serif;
+	}
 	a {
 		text-decoration: none;
 		color: #60B6FF;
-		font-weight: bold;
 	}
 }
 
@@ -62,6 +79,7 @@ body {
 *:before {
   @include box-sizing(border-box);
 }
+
 
 @media screen and (min-width:400px) and (max-width:699px){
 	.main {
@@ -74,17 +92,20 @@ body {
 		margin-left:5%;
 		margin-right: 5%;
 		height: 1.7em;
-		ul {
-			margin-left: 5%;
-			margin-right:5%;
-
-		}
+		padding-top:0.1em;
 		li {
-			font-size: 0.9em;
 			display: inline-block;
 		}
-		li:last-of-type {
-			padding-right: 0;
+		a {
+			padding-right: 2%;
+		}
+		.left {
+			margin-left:2%;
+			float: left;
+		}
+		.right {
+			margin-right: 2%;
+			float: right;
 		}
 	}
 
@@ -95,34 +116,35 @@ body {
 		background-repeat: no-repeat;
 		height:8.6em;
 		padding-top:4em;
+		@include border-radius2($curve*1.7);
 		.logo {
 			padding:0 0 0 0em;
 			width: 65%;
 			height: 2.2em;
-			// background-color: rgba(169,203,190,0.8);
 			background-color: rgba(255,255,255,0.8);
 			overflow: hidden;
 		}
 		h1 {
 			display: block;
 			font-size: 2.5em;
-			margin: -0.245em 0 0 0;
+			margin: -0.245em 0.08em 0 0;
 			color:#36607D;
 			text-align: right;
+			font-family: "lobster";
 
 		}
 		.tag-line {
 			margin-top: 0.5em;
-			margin-left: 5%;
-			width: 65%;
+			margin-left: 9%;
+			width: 70%;
 			height:1em;
 			// background-color: rgba(169,203,190,0.8);
 			background-color: rgba(255,255,255,0.8);
 			overflow: hidden;
 		}
 		p {
-			font-size: 0.9em;
-			margin: -0.15em 0.2em -0.3em 0;
+			font-size: 0.8em;
+			margin: -0.0em 0.2em -0.3em 0;
 			color: #36607D;
 			// margin-left:55%;
 			text-align: right;
@@ -142,7 +164,7 @@ body {
 			width: 70%;
 			margin:0 15%;
 			padding-bottom:0.4em;
-			@include border-radius(1.3em);
+			@include border-radius($curve);
 		}
 		h2 {
 			font-size: 1.6em;
@@ -172,20 +194,24 @@ body {
 			float: left;
 			margin-top: 1.3em;
 			margin-left: 10%;
+			border: 2px solid #828C92;
+			padding:0.4em;
+			@include border-radius($curve);
 			h3 {
 				float: left;
 				font-size: 1.2em;
 				// margin-left: 0.2em;
-				margin-top: 0.4em;
+				margin-top: 0.1em;
 				margin-bottom: 0.8em;
 			}
 			ul {
 				margin-top: 0.4em;
 				float:right;
+				padding-top: 4em;
 			}
 			a {
 				display: block;
-				margin-bottom: 0.4em;
+				margin-bottom: 0.1em;
 				color:gray;
 				font-size: 0.8em;
 				text-align: right;
@@ -195,20 +221,24 @@ body {
 			// background-color:gray;
 			width: 90%;
 			overflow: hidden;
-			float: left;
-			margin-top: 1.3em;
+			float: right;
+			margin-top: 1.5em;
 			margin-left: 10%;
+			border: 2px solid #828C92;
+			padding:0.4em;
+			@include border-radius($curve);
 			h3 {
 				float:left;
-				width: 3em;
+				width: 7em;
 				font-size: 1.2em;
 				// margin-left: 0.6em;
-				margin-top: 0.4em;
+				margin-top: 0.1em;
 				margin-bottom: 0.8em;
 			}
 			ul {
 				width: 157px;
 				float: right;
+				padding-top: 4em;
 			}
 			li {
 				float: left;
@@ -219,29 +249,31 @@ body {
 				width: 75px;
 				height:75px;
 				color:black;
-				font-size: 0.8em;
+				font-size: 0.85em;
 			}
-
+			.one, 
+			.two, 
+			.three, 
+			.four {
+				@include border-radius($curve);
+			}
 			.one {
 				background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
 				background-size:contain;
 				background-repeat:no-repeat;
 				margin-right: 0.4em;
 				margin-bottom: 0.4em;
-				@include border-radius(9em);
 			}
 			.two {
 				background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
 				background-size:contain;
 				background-repeat:no-repeat;
 				margin-bottom: 0.4em;
-				@include border-radius(9em);
 			}
 			.three {
 				background-image:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('/assets/tile.jpg');
 				background-size:contain;
 				background-repeat:no-repeat;
-				@include border-radius(9em);
 
 			}
 			.four {
@@ -249,7 +281,6 @@ body {
 				background-size:contain;
 				background-repeat:no-repeat;
 				margin-left:0.4em;
-				@include border-radius(9em);
 			}
 		}
 	}
@@ -267,17 +298,21 @@ body {
 		margin-left:auto;
 		margin-right: auto;
 		height: 1.7em;
-		ul {
-			margin-left: 5%;
-			margin-right:5%;
-
-		}
+		padding-top:0.1em;
+		font-size: 1.2em;
 		li {
-			font-size: 0.9em;
 			display: inline-block;
 		}
-		li:last-of-type {
-			padding-right: 0;
+		a {
+			padding-right: 3.5%;
+		}
+		.left {
+			margin-left:3.5%;
+			float: left;
+		}
+		.right {
+			margin-right: 3.5%;
+			float: right;
 		}
 	}
 	.jumbotron {
@@ -286,6 +321,7 @@ body {
 		background-position:bottom center;
 		height:14em;
 		padding-top:6em;
+		@include border-radius2($curve*1.7);
 		.logo {
 			padding:0 0 0 2em;
 			width: 60%;
@@ -297,9 +333,10 @@ body {
 		h1 {
 			display: block;
 			font-size: 3.7em;
-			margin: -0.245em 0 -1em 0;
+			margin: -0.245em 0.1em -1em 0;
 			color:#36607D;
 			text-align: right;
+			font-family: "lobster", serif;
 
 		}
 		.tag-line {
@@ -334,12 +371,13 @@ body {
 			float:right;
 			margin-left: 0.8em;
 			margin-bottom:0.4em;
-			@include border-radius(1.2em);
+			@include border-radius($curve);
 		}
 		h2 {
 			font-size: 1.6em;
 			margin-bottom:0.6em;
 			font-variant: italic;
+			padding-left:0.6em;
 
 		}
 		p {
@@ -352,7 +390,7 @@ body {
 
 	}
 	aside {
-		float: left;
+	// 	float: left;
 		width:30%;
 		.closures {
 			// background-color:gray;
@@ -360,67 +398,70 @@ body {
 			overflow: hidden;
 			float: left;
 			margin-top: 1.3em;
-			margin-left: 10%;
+			margin-left: 5%;
+			border: 2px solid #828C92;
+			padding:0.4em;
+			@include border-radius($curve);
 			h3 {
 				float: left;
 				font-size: 1.2em;
 				// margin-left: 0.2em;
-				margin-top: 0.4em;
-				// margin-bottom: 0.8em;
+				margin-top: 0.1em;
+				margin-bottom: 0.8em;
 			}
 			ul {
-				// margin-top: 0.4em;
+				margin-top: 0.4em;
 				float:right;
+				padding-top: 4em;
 			}
 			a {
 				display: block;
-				margin-bottom: 0.4em;
+				margin-bottom: 0.1em;
 				color:gray;
 				font-size: 0.8em;
 				text-align: right;
 			}
 		}
-
 		.shelters {
 			// background-color:gray;
 			width: 95%;
 			overflow: hidden;
-			float: left;
-			margin-top: 1.3em;
-			margin-left: 10%;
+			float: right;
+			margin-top: 1.5em;
+			margin-left: 5%;
+			border: 2px solid #828C92;
+			padding:0.4em;
+			@include border-radius($curve);
 			h3 {
 				float:left;
-				// width: 3em;
+				width: 7em;
 				font-size: 1.2em;
 				// margin-left: 0.6em;
-				margin-top: 0.4em;
+				margin-top: 0.1em;
 				margin-bottom: 0.8em;
 			}
 			ul {
 				width: 157px;
-				clear:both;
+				float: right;
+				padding-top: 2em;
 			}
 			li {
 				float: left;
 			}
 			a {
-				text-align: center;
-				padding: 0.5em;
+				text-align: right;
 				display: block;
 				width: 75px;
 				height:75px;
 				color:black;
-				font-size: 0.8em;
-			}
-			.shelter-circles {
-				float: right;
+				font-size: 0.85em;
 			}
 
 			.one,
 			.two,
 			.three,
 			.four {
-				@include border-radius(3em);
+				@include border-radius($curve);
 			}
 
 			.one {
@@ -473,30 +514,37 @@ body {
 		width: 83.333%;
 		margin-left:auto;
 		margin-right: auto;
-		height: 1.7em;
-		ul {
-			margin-left: 5%;
-			margin-right:5%;
-
-		}
+		height: 1.9em;
+		padding-top:0.16em;
+		font-size: 1.4em;
 		li {
-			font-size: 0.9em;
 			display: inline-block;
 		}
-		li:last-of-type {
-			padding-right: 0;
+		a {
+			padding-right: 2%;
+		}
+		.left {
+			margin-left:2%;
+			float: left;
+			margin-right: 2%;
+		}
+		.right {
+			margin-right: 2%;
+			float: right;
+			margin-left: 2%;
 		}
 	}
 	.jumbotron {
 		background-image: url('/assets/lower_bolton_lake.jpg');
 		background-size: cover;
 		background-position:bottom center;
-		height:20em;
-		padding-top:6em;
+		height:20.1em;
+		padding-top:12em;
+		@include border-radius2($curve*1.7);
 		.logo {
 			padding:0 0 0 2em;
 			width: 60%;
-			height: 3.8em;
+			height: 4.1em;
 			// background-color: rgba(169,203,190,0.8);
 			background-color: rgba(255,255,255,0.8);
 			overflow: hidden;
@@ -504,9 +552,10 @@ body {
 		h1 {
 			display: block;
 			font-size: 5em;
-			margin: -0.31em 0 -0.5em 0;
+			margin: -0.29em 0.08em -0.5em 0;
 			color:#36607D;
 			text-align: right;
+			font-family: "lobster",serif;
 
 		}
 		.tag-line {
@@ -542,7 +591,7 @@ body {
 			float: right;
 			margin-left: 0.8em;
 			margin-bottom:0.4em;
-			@include border-radius(1.2em);
+			@include border-radius($curve);
 		}
 		h2 {
 			font-size: 1.6em;
@@ -559,75 +608,78 @@ body {
 
 	}
 	aside {
-		float: left;
+	// 	float: left;
 		width:30%;
 		.closures {
 			// background-color:gray;
-			width: 95%;
+			width: 100%;
 			overflow: hidden;
 			float: left;
 			margin-top: 1.3em;
 			margin-left: 10%;
+			border: 2px solid #828C92;
+			padding:0.4em;
+			@include border-radius($curve);
 			h3 {
 				float: left;
 				font-size: 1.2em;
 				// margin-left: 0.2em;
-				margin-top: 0.4em;
+				margin-top: 0.1em;
 				margin-bottom: 0.8em;
 			}
 			ul {
 				margin-top: 0.4em;
 				float:right;
+				padding-top: 4em;
 			}
 			a {
 				display: block;
-				margin-bottom: 0.4em;
+				margin-bottom: 0.1em;
 				color:gray;
 				font-size: 0.8em;
 				text-align: right;
 			}
 		}
-
 		.shelters {
 			// background-color:gray;
-			width: 95%;
+			width: 100%;
 			overflow: hidden;
 			float: left;
-			margin-top: 1.3em;
+			margin-top: 1.5em;
 			margin-left: 10%;
+			border: 2px solid #828C92;
+			padding:0.4em;
+			@include border-radius($curve);
 			h3 {
 				float:left;
-				// width: 3em;
+				width: 7em;
 				font-size: 1.2em;
 				// margin-left: 0.6em;
-				margin-top: 0.4em;
+				margin-top: 0.1em;
 				margin-bottom: 0.8em;
 			}
 			ul {
 				width: 157px;
-				clear:both;
+				float: right;
+				padding-top: 2em;
 			}
 			li {
 				float: left;
 			}
 			a {
-				text-align: center;
-				padding: 0.5em;
+				text-align: right;
 				display: block;
 				width: 75px;
 				height:75px;
 				color:black;
-				font-size: 0.8em;
-			}
-			.shelter-circles {
-				float: right;
+				font-size: 0.85em;
 			}
 
 			.one,
 			.two,
 			.three,
 			.four {
-				@include border-radius(3em);
+				@include border-radius($curve);
 			}
 
 			.one {

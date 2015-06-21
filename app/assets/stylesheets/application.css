@@ -27,10 +27,16 @@ body {
   body p {
     line-height: 1.4em;
     text-align: justify; }
+  body p,
+  body a {
+    font-family: "lexia", serif; }
+  body h2,
+  body h3 {
+    color: #A67B4D;
+    font-family: "proxima-nova",serif; }
   body a {
     text-decoration: none;
-    color: #60B6FF;
-    font-weight: bold; }
+    color: #60B6FF; }
 
 *,
 *:after,
@@ -49,15 +55,18 @@ body {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    height: 1.7em; }
-    .navbar ul {
-      margin-left: 5%;
-      margin-right: 5%; }
+    height: 1.7em;
+    padding-top: 0.1em; }
     .navbar li {
-      font-size: 0.9em;
       display: inline-block; }
-    .navbar li:last-of-type {
-      padding-right: 0; }
+    .navbar a {
+      padding-right: 2%; }
+    .navbar .left {
+      margin-left: 2%;
+      float: left; }
+    .navbar .right {
+      margin-right: 2%;
+      float: right; }
 
   .jumbotron {
     background-image: url("/assets/lower_bolton_lake.jpg");
@@ -65,7 +74,13 @@ body {
     background-position: bottom center;
     background-repeat: no-repeat;
     height: 8.6em;
-    padding-top: 4em; }
+    padding-top: 4em;
+    -webkit-border-bottom-right-radius: 1.36em;
+    -webkit-border-bottom-left-radius: 1.36em;
+    -moz-border-radius-bottomright: 1.36em;
+    -moz-border-radius-bottomleft: 1.36em;
+    border-bottom-right-radius: 1.36em;
+    border-bottom-left-radius: 1.36em; }
     .jumbotron .logo {
       padding: 0 0 0 0em;
       width: 65%;
@@ -75,19 +90,20 @@ body {
     .jumbotron h1 {
       display: block;
       font-size: 2.5em;
-      margin: -0.245em 0 0 0;
+      margin: -0.245em 0.08em 0 0;
       color: #36607D;
-      text-align: right; }
+      text-align: right;
+      font-family: "lobster"; }
     .jumbotron .tag-line {
       margin-top: 0.5em;
-      margin-left: 5%;
-      width: 65%;
+      margin-left: 9%;
+      width: 70%;
       height: 1em;
       background-color: rgba(255, 255, 255, 0.8);
       overflow: hidden; }
     .jumbotron p {
-      font-size: 0.9em;
-      margin: -0.15em 0.2em -0.3em 0;
+      font-size: 0.8em;
+      margin: -0.0em 0.2em -0.3em 0;
       color: #36607D;
       text-align: right; }
 
@@ -104,10 +120,10 @@ body {
       width: 70%;
       margin: 0 15%;
       padding-bottom: 0.4em;
-      -webkit-border-radius: 1.3em;
-      -moz-border-radius: 1.3em;
-      -ms-border-radius: 1.3em;
-      border-radius: 1.3em; }
+      -webkit-border-radius: 0.8em;
+      -moz-border-radius: 0.8em;
+      -ms-border-radius: 0.8em;
+      border-radius: 0.8em; }
     .content h2 {
       font-size: 1.6em;
       margin-bottom: 0.6em;
@@ -128,36 +144,50 @@ body {
       overflow: hidden;
       float: left;
       margin-top: 1.3em;
-      margin-left: 10%; }
+      margin-left: 10%;
+      border: 2px solid #828C92;
+      padding: 0.4em;
+      -webkit-border-radius: 0.8em;
+      -moz-border-radius: 0.8em;
+      -ms-border-radius: 0.8em;
+      border-radius: 0.8em; }
       aside .closures h3 {
         float: left;
         font-size: 1.2em;
-        margin-top: 0.4em;
+        margin-top: 0.1em;
         margin-bottom: 0.8em; }
       aside .closures ul {
         margin-top: 0.4em;
-        float: right; }
+        float: right;
+        padding-top: 4em; }
       aside .closures a {
         display: block;
-        margin-bottom: 0.4em;
+        margin-bottom: 0.1em;
         color: gray;
         font-size: 0.8em;
         text-align: right; }
     aside .shelters {
       width: 90%;
       overflow: hidden;
-      float: left;
-      margin-top: 1.3em;
-      margin-left: 10%; }
+      float: right;
+      margin-top: 1.5em;
+      margin-left: 10%;
+      border: 2px solid #828C92;
+      padding: 0.4em;
+      -webkit-border-radius: 0.8em;
+      -moz-border-radius: 0.8em;
+      -ms-border-radius: 0.8em;
+      border-radius: 0.8em; }
       aside .shelters h3 {
         float: left;
-        width: 3em;
+        width: 7em;
         font-size: 1.2em;
-        margin-top: 0.4em;
+        margin-top: 0.1em;
         margin-bottom: 0.8em; }
       aside .shelters ul {
         width: 157px;
-        float: right; }
+        float: right;
+        padding-top: 4em; }
       aside .shelters li {
         float: left; }
       aside .shelters a {
@@ -166,43 +196,35 @@ body {
         width: 75px;
         height: 75px;
         color: black;
-        font-size: 0.8em; }
+        font-size: 0.85em; }
+      aside .shelters .one,
+      aside .shelters .two,
+      aside .shelters .three,
+      aside .shelters .four {
+        -webkit-border-radius: 0.8em;
+        -moz-border-radius: 0.8em;
+        -ms-border-radius: 0.8em;
+        border-radius: 0.8em; }
       aside .shelters .one {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
         background-repeat: no-repeat;
         margin-right: 0.4em;
-        margin-bottom: 0.4em;
-        -webkit-border-radius: 9em;
-        -moz-border-radius: 9em;
-        -ms-border-radius: 9em;
-        border-radius: 9em; }
+        margin-bottom: 0.4em; }
       aside .shelters .two {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
         background-repeat: no-repeat;
-        margin-bottom: 0.4em;
-        -webkit-border-radius: 9em;
-        -moz-border-radius: 9em;
-        -ms-border-radius: 9em;
-        border-radius: 9em; }
+        margin-bottom: 0.4em; }
       aside .shelters .three {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
-        background-repeat: no-repeat;
-        -webkit-border-radius: 9em;
-        -moz-border-radius: 9em;
-        -ms-border-radius: 9em;
-        border-radius: 9em; }
+        background-repeat: no-repeat; }
       aside .shelters .four {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
         background-repeat: no-repeat;
-        margin-left: 0.4em;
-        -webkit-border-radius: 9em;
-        -moz-border-radius: 9em;
-        -ms-border-radius: 9em;
-        border-radius: 9em; } }
+        margin-left: 0.4em; } }
 @media screen and (min-width: 700px) and (max-width: 1000px) {
   .main {
     width: 83.333%;
@@ -213,22 +235,32 @@ body {
     width: 83.333%;
     margin-left: auto;
     margin-right: auto;
-    height: 1.7em; }
-    .navbar ul {
-      margin-left: 5%;
-      margin-right: 5%; }
+    height: 1.7em;
+    padding-top: 0.1em;
+    font-size: 1.2em; }
     .navbar li {
-      font-size: 0.9em;
       display: inline-block; }
-    .navbar li:last-of-type {
-      padding-right: 0; }
+    .navbar a {
+      padding-right: 3.5%; }
+    .navbar .left {
+      margin-left: 3.5%;
+      float: left; }
+    .navbar .right {
+      margin-right: 3.5%;
+      float: right; }
 
   .jumbotron {
     background-image: url("/assets/lower_bolton_lake.jpg");
     background-size: cover;
     background-position: bottom center;
     height: 14em;
-    padding-top: 6em; }
+    padding-top: 6em;
+    -webkit-border-bottom-right-radius: 1.36em;
+    -webkit-border-bottom-left-radius: 1.36em;
+    -moz-border-radius-bottomright: 1.36em;
+    -moz-border-radius-bottomleft: 1.36em;
+    border-bottom-right-radius: 1.36em;
+    border-bottom-left-radius: 1.36em; }
     .jumbotron .logo {
       padding: 0 0 0 2em;
       width: 60%;
@@ -238,9 +270,10 @@ body {
     .jumbotron h1 {
       display: block;
       font-size: 3.7em;
-      margin: -0.245em 0 -1em 0;
+      margin: -0.245em 0.1em -1em 0;
       color: #36607D;
-      text-align: right; }
+      text-align: right;
+      font-family: "lobster", serif; }
     .jumbotron .tag-line {
       margin-top: 0.5em;
       margin-left: 10%;
@@ -269,14 +302,15 @@ body {
       float: right;
       margin-left: 0.8em;
       margin-bottom: 0.4em;
-      -webkit-border-radius: 1.2em;
-      -moz-border-radius: 1.2em;
-      -ms-border-radius: 1.2em;
-      border-radius: 1.2em; }
+      -webkit-border-radius: 0.8em;
+      -moz-border-radius: 0.8em;
+      -ms-border-radius: 0.8em;
+      border-radius: 0.8em; }
     .content h2 {
       font-size: 1.6em;
       margin-bottom: 0.6em;
-      font-variant: italic; }
+      font-variant: italic;
+      padding-left: 0.6em; }
     .content p {
       font-size: 0.85em;
       width: 95%;
@@ -285,60 +319,73 @@ body {
       text-indent: 1.4em; }
 
   aside {
-    float: left;
     width: 30%; }
     aside .closures {
       width: 95%;
       overflow: hidden;
       float: left;
       margin-top: 1.3em;
-      margin-left: 10%; }
+      margin-left: 5%;
+      border: 2px solid #828C92;
+      padding: 0.4em;
+      -webkit-border-radius: 0.8em;
+      -moz-border-radius: 0.8em;
+      -ms-border-radius: 0.8em;
+      border-radius: 0.8em; }
       aside .closures h3 {
         float: left;
         font-size: 1.2em;
-        margin-top: 0.4em; }
+        margin-top: 0.1em;
+        margin-bottom: 0.8em; }
       aside .closures ul {
-        float: right; }
+        margin-top: 0.4em;
+        float: right;
+        padding-top: 4em; }
       aside .closures a {
         display: block;
-        margin-bottom: 0.4em;
+        margin-bottom: 0.1em;
         color: gray;
         font-size: 0.8em;
         text-align: right; }
     aside .shelters {
       width: 95%;
       overflow: hidden;
-      float: left;
-      margin-top: 1.3em;
-      margin-left: 10%; }
+      float: right;
+      margin-top: 1.5em;
+      margin-left: 5%;
+      border: 2px solid #828C92;
+      padding: 0.4em;
+      -webkit-border-radius: 0.8em;
+      -moz-border-radius: 0.8em;
+      -ms-border-radius: 0.8em;
+      border-radius: 0.8em; }
       aside .shelters h3 {
         float: left;
+        width: 7em;
         font-size: 1.2em;
-        margin-top: 0.4em;
+        margin-top: 0.1em;
         margin-bottom: 0.8em; }
       aside .shelters ul {
         width: 157px;
-        clear: both; }
+        float: right;
+        padding-top: 2em; }
       aside .shelters li {
         float: left; }
       aside .shelters a {
-        text-align: center;
-        padding: 0.5em;
+        text-align: right;
         display: block;
         width: 75px;
         height: 75px;
         color: black;
-        font-size: 0.8em; }
-      aside .shelters .shelter-circles {
-        float: right; }
+        font-size: 0.85em; }
       aside .shelters .one,
       aside .shelters .two,
       aside .shelters .three,
       aside .shelters .four {
-        -webkit-border-radius: 3em;
-        -moz-border-radius: 3em;
-        -ms-border-radius: 3em;
-        border-radius: 3em; }
+        -webkit-border-radius: 0.8em;
+        -moz-border-radius: 0.8em;
+        -ms-border-radius: 0.8em;
+        border-radius: 0.8em; }
       aside .shelters .one {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
@@ -375,34 +422,47 @@ body {
     width: 83.333%;
     margin-left: auto;
     margin-right: auto;
-    height: 1.7em; }
-    .navbar ul {
-      margin-left: 5%;
-      margin-right: 5%; }
+    height: 1.9em;
+    padding-top: 0.16em;
+    font-size: 1.4em; }
     .navbar li {
-      font-size: 0.9em;
       display: inline-block; }
-    .navbar li:last-of-type {
-      padding-right: 0; }
+    .navbar a {
+      padding-right: 2%; }
+    .navbar .left {
+      margin-left: 2%;
+      float: left;
+      margin-right: 2%; }
+    .navbar .right {
+      margin-right: 2%;
+      float: right;
+      margin-left: 2%; }
 
   .jumbotron {
     background-image: url("/assets/lower_bolton_lake.jpg");
     background-size: cover;
     background-position: bottom center;
-    height: 20em;
-    padding-top: 6em; }
+    height: 20.1em;
+    padding-top: 12em;
+    -webkit-border-bottom-right-radius: 1.36em;
+    -webkit-border-bottom-left-radius: 1.36em;
+    -moz-border-radius-bottomright: 1.36em;
+    -moz-border-radius-bottomleft: 1.36em;
+    border-bottom-right-radius: 1.36em;
+    border-bottom-left-radius: 1.36em; }
     .jumbotron .logo {
       padding: 0 0 0 2em;
       width: 60%;
-      height: 3.8em;
+      height: 4.1em;
       background-color: rgba(255, 255, 255, 0.8);
       overflow: hidden; }
     .jumbotron h1 {
       display: block;
       font-size: 5em;
-      margin: -0.31em 0 -0.5em 0;
+      margin: -0.29em 0.08em -0.5em 0;
       color: #36607D;
-      text-align: right; }
+      text-align: right;
+      font-family: "lobster",serif; }
     .jumbotron .tag-line {
       margin-top: 0.5em;
       margin-left: 10%;
@@ -431,10 +491,10 @@ body {
       float: right;
       margin-left: 0.8em;
       margin-bottom: 0.4em;
-      -webkit-border-radius: 1.2em;
-      -moz-border-radius: 1.2em;
-      -ms-border-radius: 1.2em;
-      border-radius: 1.2em; }
+      -webkit-border-radius: 0.8em;
+      -moz-border-radius: 0.8em;
+      -ms-border-radius: 0.8em;
+      border-radius: 0.8em; }
     .content h2 {
       font-size: 1.6em;
       margin-bottom: 0.6em;
@@ -446,62 +506,73 @@ body {
       text-indent: 1.4em; }
 
   aside {
-    float: left;
     width: 30%; }
     aside .closures {
-      width: 95%;
+      width: 100%;
       overflow: hidden;
       float: left;
       margin-top: 1.3em;
-      margin-left: 10%; }
+      margin-left: 10%;
+      border: 2px solid #828C92;
+      padding: 0.4em;
+      -webkit-border-radius: 0.8em;
+      -moz-border-radius: 0.8em;
+      -ms-border-radius: 0.8em;
+      border-radius: 0.8em; }
       aside .closures h3 {
         float: left;
         font-size: 1.2em;
-        margin-top: 0.4em;
+        margin-top: 0.1em;
         margin-bottom: 0.8em; }
       aside .closures ul {
         margin-top: 0.4em;
-        float: right; }
+        float: right;
+        padding-top: 4em; }
       aside .closures a {
         display: block;
-        margin-bottom: 0.4em;
+        margin-bottom: 0.1em;
         color: gray;
         font-size: 0.8em;
         text-align: right; }
     aside .shelters {
-      width: 95%;
+      width: 100%;
       overflow: hidden;
       float: left;
-      margin-top: 1.3em;
-      margin-left: 10%; }
+      margin-top: 1.5em;
+      margin-left: 10%;
+      border: 2px solid #828C92;
+      padding: 0.4em;
+      -webkit-border-radius: 0.8em;
+      -moz-border-radius: 0.8em;
+      -ms-border-radius: 0.8em;
+      border-radius: 0.8em; }
       aside .shelters h3 {
         float: left;
+        width: 7em;
         font-size: 1.2em;
-        margin-top: 0.4em;
+        margin-top: 0.1em;
         margin-bottom: 0.8em; }
       aside .shelters ul {
         width: 157px;
-        clear: both; }
+        float: right;
+        padding-top: 2em; }
       aside .shelters li {
         float: left; }
       aside .shelters a {
-        text-align: center;
-        padding: 0.5em;
+        text-align: right;
         display: block;
         width: 75px;
         height: 75px;
         color: black;
-        font-size: 0.8em; }
-      aside .shelters .shelter-circles {
-        float: right; }
+        font-size: 0.85em; }
       aside .shelters .one,
       aside .shelters .two,
       aside .shelters .three,
       aside .shelters .four {
-        -webkit-border-radius: 3em;
-        -moz-border-radius: 3em;
-        -ms-border-radius: 3em;
-        border-radius: 3em; }
+        -webkit-border-radius: 0.8em;
+        -moz-border-radius: 0.8em;
+        -ms-border-radius: 0.8em;
+        border-radius: 0.8em; }
       aside .shelters .one {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
