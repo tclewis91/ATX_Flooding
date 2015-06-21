@@ -79,7 +79,18 @@ function logInPush (e) {
     var username = $('.userBox').val();
     var password = $('.passBox').val();
     if(event.keycode === 13) {
+        if(username === "" && password === "") {
 
+        } else {
+            var currentUser = {
+                username: username,
+                password: password
+            }
+            $.post(
+                'https://atxflood.herokuapp.com/users/sign_in',
+                currentUser
+            )
+        }
     }
 };
 
@@ -150,13 +161,13 @@ function signIn (e) {
             username: username,
             email: email
         });
-    $.post(
-        'https://atxflood.herokuapp.com/users',
-        newUser
-    )
-    $('.page').hide();
-    $('#container').show();
-    React.render(<Forum/>, document.querySelector('#container'));
+        $.post(
+            'https://atxflood.herokuapp.com/users/sign_up',
+            newUser
+        )
+        $('.page').hide();
+        $('#container').show();
+        React.render(<Forum/>, document.querySelector('#container'));
     }
 };
 
@@ -228,13 +239,14 @@ function signInPush (e) {
                 username: username,
                 email: email
             });
-        $.post(
-            'https://atxflood.herokuapp.com/users',
-            newUser
-        );
-        $('.page').hide();
-        $('#container').show();
-        React.render(<Forum/>, document.querySelector('#container'));
+            console.log('wut');
+            $.post(
+                'https://atxflood.herokuapp.com/users/sign_up',
+                newUser
+            );
+            $('.page').hide();
+            $('#container').show();
+            React.render(<Forum/>, document.querySelector('#container'));
         }
     }
 };

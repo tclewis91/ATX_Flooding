@@ -8,7 +8,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc2XC-pGKkj3gdmmDDkXWzC1uBuVbM1_A">
     </script>
 	<style type="text/css">
-      html, body, #mapCanvas { height: 300px; margin: 0; padding: 0; width: 83.333%; margin-right: auto; margin-left: auto}
+      #mapCanvas { height: 300px; margin: 0; padding: 0; width: 83.333%; margin-right: auto; margin-left: auto}
     </style>
  	<title>ATX_Flooding</title>
   <%= stylesheet_link_tag 'application', media: 'all' %>
@@ -34,6 +34,8 @@
 		<div id = "mapCanvas"></div>
 		<button id = 'closed'>Closed Low Water Crossings</button>
 		<button id = 'all'>All Low Water Crossings</button>
+		<input type = 'text' id = 'search' placeholder = 'Search a specific location...'>
+		<button id = 'searchButton'>Submit</button>
 	</section>
 	<div id='container'>
 
