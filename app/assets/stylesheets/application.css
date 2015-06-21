@@ -53,10 +53,11 @@ body {
   .navbar {
     background-color: #366080;
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 1.7em;
-    padding-top: 0.1em; }
+    margin-left: auto;
+    margin-right: auto;
+    height: 1.6em;
+    padding-top: 0.1em;
+    font-size: 1em; }
     .navbar li {
       display: inline-block; }
     .navbar a {
@@ -301,7 +302,76 @@ body {
     font-size: 0.8em;
     color: red;
     display: none;
-    font-style: italic; } }
+    font-style: italic; }
+
+  .forums {
+    width: 90%;
+    margin: 0 auto; }
+    .forums .forum-tron {
+      background-image: url("/assets/destroyed-small.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 12em;
+      padding-top: 8.5em; }
+      .forums .forum-tron .logo {
+        padding: 0 0 0 0em;
+        width: 45%;
+        height: 2.2em;
+        background-color: rgba(255, 255, 255, 0.2);
+        overflow: hidden; }
+      .forums .forum-tron h1 {
+        display: block;
+        font-size: 2em;
+        margin: -0.245em 0.08em 0 0;
+        color: #FFECD3;
+        text-align: right;
+        font-family: "lobster"; }
+    .forums .forum-select .button {
+      border-top: 1px solid #4abaff;
+      border-right: 1px solid rgba(74, 186, 255, 0.6);
+      background: #002036;
+      background: -webkit-gradient(linear, left top, left bottom, from(#365f7d), to(#002036));
+      background: -webkit-linear-gradient(top, #365f7d, #002036);
+      background: -moz-linear-gradient(top, #365f7d, #002036);
+      background: -ms-linear-gradient(top, #365f7d, #002036);
+      background: -o-linear-gradient(top, #365f7d, #002036);
+      padding: 6.5px 13px;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+      -webkit-box-shadow: black 0 1px 0;
+      -moz-box-shadow: black 0 1px 0;
+      box-shadow: black 0 1px 0;
+      text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+      color: #67b6db;
+      font-size: 15px;
+      font-family: Georgia, serif;
+      text-decoration: none;
+      text-align: center; }
+    .forums .forum-select .button:last-of-type {
+      border-right: 0; }
+    .forums .forum-select .button:hover {
+      border-top-color: #366080;
+      background: #366080;
+      color: #ccc; }
+    .forums .forum-select .button:active {
+      border-top-color: #828c92;
+      background: #828c92; }
+    .forums .forum-select li {
+      width: 25%;
+      display: inline-block; }
+    .forums .forum-select a {
+      padding-top: 1em;
+      display: inline-block;
+      width: 5em;
+      font-size: 0.9em; }
+    .forums .chats {
+      display: block;
+      margin: 1em auto 0 auto;
+      background-color: #357230;
+      width: 80%;
+      height: 10em; } }
 @media screen and (min-width: 700px) and (max-width: 1000px) {
   .main {
     width: 83.333%;
@@ -560,7 +630,43 @@ body {
     font-size: 0.8em;
     color: red;
     display: none;
-    font-style: italic; } }
+    font-style: italic; }
+
+  .forums {
+    width: 83.333%;
+    margin: 0 auto; }
+    .forums .forum-tron {
+      background-image: url("/assets/destroyed-large.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 18em;
+      padding-top: 12em;
+      -webkit-border-bottom-right-radius: 1.36em;
+      -webkit-border-bottom-left-radius: 1.36em;
+      -moz-border-radius-bottomright: 1.36em;
+      -moz-border-radius-bottomleft: 1.36em;
+      border-bottom-right-radius: 1.36em;
+      border-bottom-left-radius: 1.36em; }
+      .forums .forum-tron .logo {
+        padding: 0 0 0 0em;
+        width: 45%;
+        height: 4.2em;
+        background-color: rgba(255, 255, 255, 0.2);
+        overflow: hidden; }
+      .forums .forum-tron h1 {
+        display: block;
+        font-size: 4em;
+        margin: -0.245em 0.08em 0 0;
+        color: #FFECD3;
+        text-align: right;
+        font-family: "lobster"; }
+    .forums .chats {
+      display: block;
+      margin: 1em auto 0 auto;
+      background-color: #357230;
+      width: 80%;
+      height: 20em; } }
 @media screen and (min-width: 1001px) and (max-width: 1300px) {
   .main {
     width: 83.333%;
@@ -819,6 +925,42 @@ body {
     font-size: 0.8em;
     color: red;
     display: none;
-    font-style: italic; } }
+    font-style: italic; }
+
+  .forums {
+    width: 83.333%;
+    margin: 0 auto; }
+    .forums .forum-tron {
+      background-image: url("/assets/destroyed-large.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 23em;
+      padding-top: 15em;
+      -webkit-border-bottom-right-radius: 1.36em;
+      -webkit-border-bottom-left-radius: 1.36em;
+      -moz-border-radius-bottomright: 1.36em;
+      -moz-border-radius-bottomleft: 1.36em;
+      border-bottom-right-radius: 1.36em;
+      border-bottom-left-radius: 1.36em; }
+      .forums .forum-tron .logo {
+        padding: 0 0 0 0em;
+        width: 45%;
+        height: 5.2em;
+        background-color: rgba(255, 255, 255, 0.2);
+        overflow: hidden; }
+      .forums .forum-tron h1 {
+        display: block;
+        font-size: 5em;
+        margin: -0.245em 0.08em 0 0;
+        color: #FFECD3;
+        text-align: right;
+        font-family: "lobster"; }
+    .forums .chats {
+      display: block;
+      margin: 1em auto 0 auto;
+      background-color: #357230;
+      width: 80%;
+      height: 20em; } }
 
 /*# sourceMappingURL=application.css.map */

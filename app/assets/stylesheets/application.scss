@@ -37,14 +37,50 @@ $blue:#67b6eb;
 }
 @mixin border-radius2($radius) {
 	-webkit-border-bottom-right-radius: $radius;
--webkit-border-bottom-left-radius: $radius;
--moz-border-radius-bottomright: $radius;
--moz-border-radius-bottomleft: $radius;
-border-bottom-right-radius: $radius;
-border-bottom-left-radius: $radius;
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-bottomright: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-bottom-right-radius: $radius;
+	border-bottom-left-radius: $radius;
 }
-
-
+@mixin button{
+	.button {
+	   border-top: 1px solid #4abaff;
+	   border-right: 1px solid rgba(74,186,255,0.6);
+	   background: #002036;
+	   background: -webkit-gradient(linear, left top, left bottom, from(#365f7d), to(#002036));
+	   background: -webkit-linear-gradient(top, #365f7d, #002036);
+	   background: -moz-linear-gradient(top, #365f7d, #002036);
+	   background: -ms-linear-gradient(top, #365f7d, #002036);
+	   background: -o-linear-gradient(top, #365f7d, #002036);
+	   padding: 6.5px 13px;
+	   -webkit-border-radius: 0px;
+	   -moz-border-radius: 0px;
+	   border-radius: 0px;
+	   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	   box-shadow: rgba(0,0,0,1) 0 1px 0;
+	   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	   color: #67b6db;
+	   font-size: 15px;
+	   font-family: Georgia, serif;
+	   text-decoration: none;
+	   // vertical-align: middle;
+	   text-align: center;
+	}
+	.button:last-of-type {
+		border-right: 0;
+	}
+	.button:hover {
+	   border-top-color: #366080;
+	   background: #366080;
+	   color: #ccc;
+	}
+	.button:active {
+	   border-top-color: #828c92;
+	   background: #828c92;
+	}
+}
 body {
 	font-size:$global;
 	max-width:$max;
@@ -93,10 +129,11 @@ body {
 	.navbar {
 		background-color: #366080;
 		width: 90%;
-		margin-left:5%;
-		margin-right: 5%;
-		height: 1.7em;
+		margin-left:auto;
+		margin-right: auto;
+		height: 1.6em;
 		padding-top:0.1em;
+		font-size: 1em;
 		li {
 			display: inline-block;
 		}
@@ -113,6 +150,7 @@ body {
 			float: right;
 		}
 	}
+
 
 	.jumbotron {
 		background-image: url('/assets/lower_bolton_lake.jpg');
@@ -361,6 +399,57 @@ body {
 		color:red;
 		display:none;
 		font-style: italic;
+	}
+	.forums {
+		width: 90%;
+		margin: 0 auto;
+		.forum-tron {
+			background-image: url('/assets/destroyed-small.jpg');
+			background-size: cover;
+			background-position:center;
+			background-repeat: no-repeat;
+			height:12em;
+			padding-top:8.5em;
+			// @include border-radius2($curve*1.7);
+			.logo {
+				padding:0 0 0 0em;
+				width: 45%;
+				height: 2.2em;
+				background-color: rgba(255,255,255,0.2);
+				overflow: hidden;
+			}
+			h1 {
+				display: block;
+				font-size: 2em;
+				margin: -0.245em 0.08em 0 0;
+				color:#FFECD3;
+				text-align: right;
+				font-family: "lobster";
+
+			}
+		}
+		.forum-select {
+
+			@include button;
+			li {
+				width:25%;
+				display: inline-block;
+			}
+			a {
+				padding-top: 1em;
+				display: inline-block;
+				width:5em;
+				font-size: 0.9em;
+			}
+		}
+
+		.chats {
+			display: block;
+			margin: 1em auto 0 auto;
+			background-color:#357230;
+			width: 80%;
+			height:10em;
+		}
 	}
 }
 // End of Query
@@ -649,6 +738,42 @@ body {
 		display:none;
 		font-style: italic;
 	}
+	.forums {
+		width: 83.333%;
+		margin: 0 auto;
+		.forum-tron {
+			background-image: url('/assets/destroyed-large.jpg');
+			background-size: cover;
+			background-position:center;
+			background-repeat: no-repeat;
+			height:18em;
+			padding-top:12em;
+			@include border-radius2($curve*1.7);
+			.logo {
+				padding:0 0 0 0em;
+				width: 45%;
+				height: 4.2em;
+				background-color: rgba(255,255,255,0.2);
+				overflow: hidden;
+			}
+			h1 {
+				display: block;
+				font-size: 4em;
+				margin: -0.245em 0.08em 0 0;
+				color:#FFECD3;
+				text-align: right;
+				font-family: "lobster";
+
+			}
+		}
+		.chats {
+			display: block;
+			margin: 1em auto 0 auto;
+			background-color:#357230;
+			width: 80%;
+			height:20em;
+		}
+	}
 
 }
 // End of Query
@@ -936,6 +1061,42 @@ body {
 		color:red;
 		display:none;
 		font-style: italic;
+	}
+	.forums {
+		width: 83.333%;
+		margin: 0 auto;
+		.forum-tron {
+			background-image: url('/assets/destroyed-large.jpg');
+			background-size: cover;
+			background-position:center;
+			background-repeat: no-repeat;
+			height:23em;
+			padding-top:15em;
+			@include border-radius2($curve*1.7);
+			.logo {
+				padding:0 0 0 0em;
+				width: 45%;
+				height: 5.2em;
+				background-color: rgba(255,255,255,0.2);
+				overflow: hidden;
+			}
+			h1 {
+				display: block;
+				font-size: 5em;
+				margin: -0.245em 0.08em 0 0;
+				color:#FFECD3;
+				text-align: right;
+				font-family: "lobster";
+
+			}
+		}
+		.chats {
+			display: block;
+			margin: 1em auto 0 auto;
+			background-color:#357230;
+			width: 80%;
+			height:20em;
+		}
 	}
 }
 // End of Query

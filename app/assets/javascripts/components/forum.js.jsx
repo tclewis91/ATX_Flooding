@@ -1,27 +1,35 @@
 var Forum = React.createClass({
     render: function () {
         return (
-          <section>
-            <h1> Forums </h1>
-            <div>
-            	<a href = "#1"><div className = 'con' ref = 'ch1'><nav className = 'chLabel'>Forum Board #1</nav></div></a>
-				<a href = "#2"><div className = 'con' ref = 'ch2'><nav className = 'chLabel'>Forum Board #2</nav></div></a>
-				<a href = "#3"><div className = 'con' ref = 'ch3'><nav className = 'chLabel'>Forum Board #3</nav></div></a>
-				<a href = "#4"><div className = 'con' ref = 'ch4'><nav className = 'chLabel'>Forum Board #4</nav></div></a>
-
-				<section id = "chatArea1" className = 'page'>
+          <section className="forums">
+          	<div className="forum-tron">
+	          	<div className="logo">
+	            	<h1> Forums </h1>
+	            </div>
+            </div>
+            <div className="forum-select">
+            	<ul className="forum-button">
+	            	<li className="button"><a href = "#1">Road Closures</a></li>
+					<li className="button"><a href = "#2">Volunteer Work</a></li>
+					<li className="button"><a href = "#3">Shelter Information</a></li>
+					<li className="button"><a href = "#4">General Board</a></li>
+				</ul>
+			</div>
+			<div className="forumBox">
+				<section id = "chatArea1" className = 'chats page'>
 					<div className="box chatBox" ref = "1"></div>
 				</section>
-				<section id = "chatArea2" className = 'page'>
+				<section id = "chatArea2" className = ' chats page'>
 					<div className="box chatBox" ref = "2"></div>
 				</section>
-				<section id = "chatArea3" className = 'page'>
+				<section id = "chatArea3" className = 'chats page'>
 					<div className="box chatBox" ref = "3"></div>
 				</section>
-				<section id = "chatArea4" className = 'page'>
+				<section id = "chatArea4" className = 'chats page'>
 					<div className="box chatBox" ref = "4"></div>
 				</section>
-
+			</div>
+			<div className="forum-input">
 				<form>
 					<input type = "text" ref = "commentBox" placeholder = "" />
 					<button type = "submit" ref = "commentButton">Submit</button>
