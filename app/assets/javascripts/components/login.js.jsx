@@ -1,7 +1,12 @@
 var Login = React.createClass({
 	render: function () {
 		return (
-			<section>
+			<section className="main">
+				<div className="login-tron">
+					<div className="logo">
+						<h1>Sign up below.</h1>
+					</div>
+				</div>
 				<form>
 					<h2>Log in...</h2>
 					<input type = "text" className = "userBox" placeholder = "Username" /> <span className = "error userError">*Your username or password is incorrect</span>

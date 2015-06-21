@@ -36,7 +36,7 @@ body {
     font-family: "proxima-nova",serif; }
   body a {
     text-decoration: none;
-    color: #60B6FF; }
+    color: #A67B4D; }
 
 *,
 *:after,
@@ -60,7 +60,8 @@ body {
     .navbar li {
       display: inline-block; }
     .navbar a {
-      padding-right: 2%; }
+      padding-right: 2%;
+      color: #67b6eb; }
     .navbar .left {
       margin-left: 2%;
       float: left; }
@@ -106,6 +107,33 @@ body {
       margin: -0.0em 0.2em -0.3em 0;
       color: #36607D;
       text-align: right; }
+
+  .login-tron {
+    background-image: url("/assets/grass-small.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 8.6em;
+    padding-top: 4em;
+    -webkit-border-bottom-right-radius: 1.36em;
+    -webkit-border-bottom-left-radius: 1.36em;
+    -moz-border-radius-bottomright: 1.36em;
+    -moz-border-radius-bottomleft: 1.36em;
+    border-bottom-right-radius: 1.36em;
+    border-bottom-left-radius: 1.36em; }
+    .login-tron .logo {
+      padding: 0 0 0 0em;
+      width: 65%;
+      height: 2.2em;
+      background-color: rgba(255, 255, 255, 0.4);
+      overflow: hidden; }
+    .login-tron h1 {
+      display: block;
+      font-size: 2em;
+      margin: -0.245em 0.08em 0 0;
+      color: #FFECD3;
+      text-align: right;
+      font-family: "lobster"; }
 
   .container {
     width: 100%; }
@@ -224,7 +252,13 @@ body {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
         background-repeat: no-repeat;
-        margin-left: 0.4em; } }
+        margin-left: 0.4em; }
+
+  .error {
+    font-size: 0.8em;
+    color: red;
+    display: none;
+    font-style: italic; } }
 @media screen and (min-width: 700px) and (max-width: 1000px) {
   .main {
     width: 83.333%;
@@ -241,7 +275,8 @@ body {
     .navbar li {
       display: inline-block; }
     .navbar a {
-      padding-right: 3.5%; }
+      padding-right: 3.5%;
+      color: #67b6eb; }
     .navbar .left {
       margin-left: 3.5%;
       float: left; }
@@ -286,6 +321,32 @@ body {
       margin: -0.1em 0.2em -0.3em 0;
       color: #36607D;
       text-align: right; }
+
+  .login-tron {
+    background-image: url("/assets/grass-large.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    height: 14em;
+    padding-top: 6em;
+    -webkit-border-bottom-right-radius: 1.36em;
+    -webkit-border-bottom-left-radius: 1.36em;
+    -moz-border-radius-bottomright: 1.36em;
+    -moz-border-radius-bottomleft: 1.36em;
+    border-bottom-right-radius: 1.36em;
+    border-bottom-left-radius: 1.36em; }
+    .login-tron .logo {
+      padding: 0 0 0 2em;
+      width: 65%;
+      height: 4.2em;
+      background-color: rgba(255, 255, 255, 0.4);
+      overflow: hidden; }
+    .login-tron h1 {
+      display: block;
+      font-size: 3.7em;
+      margin: -0.245em 0.1em -1em 0;
+      color: #FFECD3;
+      text-align: right;
+      font-family: "lobster", serif; }
 
   .container {
     width: 100%; }
@@ -428,7 +489,8 @@ body {
     .navbar li {
       display: inline-block; }
     .navbar a {
-      padding-right: 2%; }
+      padding-right: 2%;
+      color: #67b6eb; }
     .navbar .left {
       margin-left: 2%;
       float: left;
@@ -475,6 +537,32 @@ body {
       margin: -0.17em 0.2em -0.3em 0;
       color: #36607D;
       text-align: right; }
+
+  .login-tron {
+    background-image: url("/assets/grass-small.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    height: 20.1em;
+    padding-top: 12em;
+    -webkit-border-bottom-right-radius: 1.36em;
+    -webkit-border-bottom-left-radius: 1.36em;
+    -moz-border-radius-bottomright: 1.36em;
+    -moz-border-radius-bottomleft: 1.36em;
+    border-bottom-right-radius: 1.36em;
+    border-bottom-left-radius: 1.36em; }
+    .login-tron .logo {
+      padding: 0 0 0 2em;
+      width: 60%;
+      height: 5.5em;
+      background-color: rgba(255, 255, 255, 0.4);
+      overflow: hidden; }
+    .login-tron h1 {
+      display: block;
+      font-size: 5em;
+      margin: -0.26em 0.08em -0.5em 0;
+      color: #FFECD3;
+      text-align: right;
+      font-family: "lobster",serif; }
 
   .container {
     width: 100%; }
@@ -592,6 +680,12 @@ body {
         background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("/assets/tile.jpg");
         background-size: contain;
         background-repeat: no-repeat;
-        margin-left: 0.4em; } }
+        margin-left: 0.4em; }
+
+  .error {
+    font-size: 0.8em;
+    color: red;
+    display: none;
+    font-style: italic; } }
 
 /*# sourceMappingURL=application.css.map */
