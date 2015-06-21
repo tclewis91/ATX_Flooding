@@ -184,7 +184,7 @@ function ready(e) {
         var f = false;
         var l = false;
         var p = false;
-        var u = false; 
+        var u = false;
         if(event.keycode === 13) {
             if (firstName === "") {
                 $('.firstError').show();
@@ -290,11 +290,11 @@ function ready(e) {
     function initialize() {
         var customIcons = {
             on: {
-                icon: ''        
+                icon: ''
             },
             off: {
                 icon: ''
-            }   
+            }
         }
 
         var mapOptions = {
@@ -324,11 +324,11 @@ function ready(e) {
 
         var customIcons = {
             on: {
-                icon: ''        
+                icon: ''
             },
             off: {
                 icon: ''
-            }   
+            }
         }
         //ajax call for xml data that contains info on low water crossings
         $.ajax({
@@ -337,7 +337,7 @@ function ready(e) {
             dataType: "xml",
             xhrFields: {
                 withCredentials: false
-            },             
+            },
             success: parseXml,
             complete: setupAC,
             failure: function(data) {
@@ -368,7 +368,7 @@ function ready(e) {
                         //loads pop-up info for the marker
                         bindInfoWindow(marker, map, infoWindow, html);
                     }
-                }   
+                }
             }
             var infoWindow = new google.maps.InfoWindow;
             function bindInfoWindow(marker, map, infoWindow, html) {
@@ -396,11 +396,11 @@ function ready(e) {
 
         var customIcons = {
             on: {
-                icon: ''        
+                icon: ''
             },
             off: {
                 icon: ''
-            }   
+            }
         }
         $.ajax({
             type: "GET",
@@ -408,7 +408,7 @@ function ready(e) {
             dataType: "xml",
             xhrFields: {
                 withCredentials: false
-            },             
+            },
             success: parseXml,
             complete: setupAC,
             failure: function(data) {
@@ -450,7 +450,7 @@ function ready(e) {
                     });
                     bindInfoWindow(marker, map, infoWindow, html);
                 }
-            }   
+            }
         }
         var infoWindow = new google.maps.InfoWindow;
         function bindInfoWindow(marker, map, infoWindow, html) {
