@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css">
-      html, body, #mapCanvas { height: 300px; margin: 0; padding: 0;}
-    </style>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc2XC-pGKkj3gdmmDDkXWzC1uBuVbM1_A">
     </script>
+	<style type="text/css">
+      html, body, #mapCanvas { height: 300px; margin: 0; padding: 0;}
+    </style>
+    <script src="//use.typekit.net/tqu3hvz.js"></script>
     <script type="text/javascript">
 
-      function initialize() {
+		function initialize() {
+      		var customIcons = {
+		  		on: {
+		   			icon: ''		
+		 		},
+		  		off: {
+		    		icon: ''
+		  		}	
+			}
 	      	var austin = new google.maps.LatLng(30.30, -97.70); //sets austin's coordinates in a variable
 	      	var imageBounds = new google.maps.LatLngBounds(
 	      		new google.maps.LatLng(30.2, -97.80),
@@ -50,21 +60,14 @@
 					var icon = customIcons[type] || {};
 					var marker = new google.maps.Marker({
 					  map: map,
-					  position: point
-					  // icon: icon.icon
+					  position: point,
+					  icon: icon.icon,
+					  scaledSize: google.maps.Size(71, 71)
 					});
 					bindInfoWindow(marker, map, infoWindow, html);
 				}	
 		 	}
 		 	var infoWindow = new google.maps.InfoWindow;
-		 	var customIcons = {
-		  		off: {
-		   			icon: ''
-		 		},
-		  		on: {
-		    		icon: 'http://labs.google.com/ridefinder/images/mm_20_red.png'
-		  		}	
-			};
 			function bindInfoWindow(marker, map, infoWindow, html) {
 			  google.maps.event.addListener(marker, 'click', function() {
 			    infoWindow.setContent(html);
