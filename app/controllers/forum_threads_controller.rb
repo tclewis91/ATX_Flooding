@@ -35,8 +35,4 @@ private
     @forum_thread = Forum.Thread.find(params[:id])
     render json: set_thread
   end
-
-  def forum_thread_params
-    params.require(:forum_thread).permit(:subject, :forum_posts_attributes: [:body])
-  end
 end
