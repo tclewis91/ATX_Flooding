@@ -163,7 +163,7 @@ function ready(e) {
                 username: username,
                 email: email
             });
-            $.post(
+            $.get(
                 'https://atxflood.herokuapp.com/users/sign_up',
                 newUser
             )
@@ -243,7 +243,7 @@ function ready(e) {
                     email: email
                 });
                 console.log('wut');
-                $.post(
+                $.get(
                     'https://atxflood.herokuapp.com/users/sign_up',
                     newUser
                 );
