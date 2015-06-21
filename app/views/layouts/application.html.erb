@@ -4,101 +4,12 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script src="//use.typekit.net/tqu3hvz.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
-	<style type="text/css">
-      html, body, #mapCanvas { height: 300px; margin: 0; padding: 0;}
-    </style>
 	<script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDc2XC-pGKkj3gdmmDDkXWzC1uBuVbM1_A">
     </script>
 	<style type="text/css">
-      html, body, #mapCanvas { height: 300px; margin: 0; padding: 0;}
+      html, body, #mapCanvas { height: 300px; margin: 0; padding: 0; width: 83.333%; margin-right: auto; margin-left: auto}
     </style>
-    <script src="//use.typekit.net/tqu3hvz.js"></script>
-    <script type="text/javascript">
-
-		function initialize() {
-      		var customIcons = {
-		  		on: {
-		   			icon: ''		
-		 		},
-		  		off: {
-		    		icon: ''
-		  		}	
-			}
-	      	var austin = new google.maps.LatLng(30.30, -97.70); //sets austin's coordinates in a variable
-	      	var imageBounds = new google.maps.LatLngBounds(
-	      		new google.maps.LatLng(30.2, -97.80),
-	      		new google.maps.LatLng(30.30, -97.70));
-
-		  var mapOptions = {
-		    zoom: 13,
-		    center: austin
-		  };
-	      var map = new google.maps.Map(document.getElementById('mapCanvas'),
-	        mapOptions);
-
-			 $.ajax({
-				type: "GET",
-				url: "assets/phpsqlajax_genxml.xml",
-				dataType: "xml",
-				xhrFields: {
-					withCredentials: false
-				},			   
-				success: parseXml,
-				complete: setupAC,
-				failure: function(data) {
-					alert("XML File could not be found");
-				}
-
-			 });
-			 function parseXml(xml) {
-		 	console.log(xml);
-			var markers = xml.documentElement.getElementsByTagName("marker");
-				for (var i = 0; i < markers.length; i++) {
-					var name = markers[i].getAttribute("name");
-					var address = markers[i].getAttribute("address");
-					var type = markers[i].getAttribute("type");
-					var point = new google.maps.LatLng(
-					    parseFloat(markers[i].getAttribute("lat")),
-					    parseFloat(markers[i].getAttribute("lng")));
-					var html = "<b>" + name + "</b> <br/>" + address;
-					var icon = customIcons[type] || {};
-					var marker = new google.maps.Marker({
-					  map: map,
-					  position: point,
-					  icon: icon.icon,
-					  scaledSize: google.maps.Size(71, 71)
-					});
-					bindInfoWindow(marker, map, infoWindow, html);
-				}	
-		 	}
-		 	var infoWindow = new google.maps.InfoWindow;
-			function bindInfoWindow(marker, map, infoWindow, html) {
-			  google.maps.event.addListener(marker, 'click', function() {
-			    infoWindow.setContent(html);
-			    infoWindow.open(map, marker);
-			  });
-			};
-
-	   //    historicalOverlay = new google.maps.GroundOverlay(
-		  //     'http://www.gordonrigg.com/the-hub/wp-content/uploads/2015/06/little_cute_cat_1920x1080.jpg',
-		  //     imageBounds);
-		  // historicalOverlay.setMap(map);
-      }
-
-		function setupAC() {
-		   // $("input#searchBox").autocomplete({
-		   // source: myArr,
-		   // minLength: 1,
-		   // select: function(event, ui) {
-		   //   $("input#searchBox").val(ui.item.value);
-		   //   $("#searchForm").submit();
-		   // }
-		  }
-
-      google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
  	<title>ATX_Flooding</title>
   <%= stylesheet_link_tag 'application', media: 'all' %>
 </head>
@@ -121,6 +32,8 @@
 	</header>
 	<section class = "page">
 		<div id = "mapCanvas"></div>
+		<button id = 'closed'>Closed Low Water Crossings</button>
+		<button id = 'all'>All Low Water Crossings</button>
 	</section>
 	<div id='container'>
 
