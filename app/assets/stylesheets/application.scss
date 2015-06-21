@@ -81,6 +81,16 @@ $blue:#67b6eb;
 	   background: #828c92;
 	}
 }
+@mixin border-right($radius) {
+	-webkit-border-bottom-right-radius: $radius;
+	-moz-border-radius-bottomright: $radius;
+	border-bottom-right-radius: $radius;
+}
+@mixin border-left($radius) {
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-bottom-left-radius: $radius;
+}
 body {
 	font-size:$global;
 	max-width:$max;
@@ -431,12 +441,18 @@ body {
 		.forum-select {
 
 			@include button;
+			.left {
+				@include border-left($curve*1.2);
+			}
+			.right {
+				@include border-right($curve*1.2);
+			}
 			li {
 				width:25%;
 				display: inline-block;
 			}
 			a {
-				padding-top: 1em;
+				// padding-top: 1em;
 				display: inline-block;
 				width:5em;
 				font-size: 0.9em;
@@ -446,13 +462,29 @@ body {
 		.chats {
 			display: block;
 			margin: 1em auto 0 auto;
-			background-color:#357230;
 			width: 80%;
 			height:10em;
+			background-color: rgba(255,236,214,0.3);
+			border: 2px solid #828C92;
+			padding:0.4em;
+			@include border-radius($curve);
+		}
+		.forum-input {
+			width: 80%;
+			margin: 1em auto;
+			form {
+				margin-left:6.3em;
+			}
 		}
 	}
 }
-// End of Query
+
+//=======================================================================
+
+//-------------------------------End of Query ---------------------------
+
+//=======================================================================
+
 @media screen and (min-width:700px) and (max-width:1000px){
 	.main {
 		width: 83.333%;
@@ -748,7 +780,7 @@ body {
 			background-repeat: no-repeat;
 			height:18em;
 			padding-top:12em;
-			@include border-radius2($curve*1.7);
+			// @include border-radius2($curve*1.7);
 			.logo {
 				padding:0 0 0 0em;
 				width: 45%;
@@ -773,10 +805,55 @@ body {
 			width: 80%;
 			height:20em;
 		}
+		.forum-select {
+
+			@include button;
+			.left {
+				@include border-left($curve*1.7);
+			}
+			.right {
+				@include border-right($curve*1.7);
+			}
+			li {
+				width:25%;
+				display: inline-block;
+			}
+			a {
+				// padding-top: 1em;
+				display: inline-block;
+				width:5em;
+				font-size: 1.1em;
+			}
+		}
+
+		.chats {
+			display: block;
+			margin: 1em auto 0 auto;
+			width: 80%;
+			height:13em;
+			background-color: rgba(255,236,214,0.3);
+			border: 2px solid #828C92;
+			padding:0.4em;
+			@include border-radius($curve);
+		}
+		.forum-input {
+			width: 80%;
+			margin: 1em auto;
+			form {
+				margin-left:12em;
+			}
+		}
 	}
 
 }
-// End of Query
+
+//=======================================================================
+
+//-------------------------------End of Query ---------------------------
+
+//=======================================================================
+
+
 @media screen and (min-width:1001px) and (max-width:1300px){
 	.main {
 		width: 83.333%;
@@ -1072,7 +1149,7 @@ body {
 			background-repeat: no-repeat;
 			height:23em;
 			padding-top:15em;
-			@include border-radius2($curve*1.7);
+			// @include border-radius2($curve*1.7);
 			.logo {
 				padding:0 0 0 0em;
 				width: 45%;
@@ -1097,9 +1174,52 @@ body {
 			width: 80%;
 			height:20em;
 		}
+		.forum-select {
+
+			@include button;
+			.left {
+				@include border-left($curve*1.7);
+			}
+			.right {
+				@include border-right($curve*1.7);
+			}
+			li {
+				width:25%;
+				display: inline-block;
+			}
+			a {
+				// padding-top: 1em;
+				display: inline-block;
+				width:5em;
+				font-size: 1.2em;
+			}
+		}
+
+		.chats {
+			display: block;
+			margin: 1em auto 0 auto;
+			width: 80%;
+			height:15em;
+			background-color: rgba(255,236,214,0.3);
+			border: 2px solid #828C92;
+			padding:0.4em;
+			@include border-radius($curve);
+		}
+		.forum-input {
+			width: 80%;
+			margin: 1em auto;
+			form {
+				margin-left:16em;
+			}
+		}
 	}
 }
-// End of Query
+
+//=======================================================================
+
+//-------------------------------End of Query ---------------------------
+
+//=======================================================================
 
 
 
