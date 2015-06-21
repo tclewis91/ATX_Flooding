@@ -2,12 +2,12 @@ var Login = React.createClass({
 	render: function () {
 		return (
 			<section className="main">
-				<div className="login-tron">
+				<div className="login-tron page">
 					<div className="logo">
 						<h1>Welcome.</h1>
 					</div>
 				</div>
-				<div className="login-input">
+				<div className="login-input page">
 					<form>
 						<h2>Log in...</h2>
 						<input type = "text" className = "userBox" placeholder = "Username" /> <span className = "error userError">*Your username or password is incorrect</span>
@@ -15,7 +15,7 @@ var Login = React.createClass({
 						<button type = "submit" className = "logButton">Submit</button>
 					</form>
 				</div>
-				<div className="login-signup">
+				<div className="login-signup page">
 					<form>
 						<h2>Or Sign Up!</h2>
 						<input type = "text" className = "firstName" placeholder = "First Name" /> <span className = "error firstError">*you must ender a valid name</span>
@@ -26,6 +26,9 @@ var Login = React.createClass({
 						<button className = "signButton">Submit</button>
 					</form>
 				</div>
+				<section className = 'signUpSuccess'>
+					You have succesfully signed up! Click <a href = '#login'>here</a> to log in!
+				</section>
 			</section>
 		);
 	}
