@@ -31,8 +31,8 @@ var Forum = React.createClass({
 			</div>
 			<div className="forum-input">
 				<form>
-					<input type = "text" ref = "commentBox" placeholder = "" />
-					<button type = "submit" ref = "commentButton">Submit</button>
+					<input type = "text" className = "commentBox" placeholder = "" />
+					<button className = "commentButton">Submit</button>
 				</form>
             </div>
           </section>
