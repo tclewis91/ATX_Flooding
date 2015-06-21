@@ -25,7 +25,8 @@ def create #automatically assignes new id w/ new thread.
       render json: @create_thread.save
     else
       render json: { error: error.message }, status: 400
-end
+    end
+  end
 
 
 private
