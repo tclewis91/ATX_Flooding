@@ -54,6 +54,7 @@ $('.password').keyup(signInPush);
 $('.username').keyup(signInPush);
 $('#closed').click(showClosed);
 $('#all').click(showAll);
+$('.commentButton').on('click', addComment)
 //
 //Log in and sign in functions
 function logIn (e) {
@@ -250,6 +251,26 @@ function signInPush (e) {
         }
     }
 };
+//
+//comments
+var commentList = new CommentCollection();
+showComments();
+function addComment (e) {
+    e.preventDefault();
+    var comment = $('.commentBox').val();
+
+    var commentToAdd = new Comment({
+        text: comment,
+        badge: window.location.hash
+    });
+
+    commentList.add(commentToAdd);
+    commentToAdd.save();
+    showComments();
+}
+function showComments () {
+
+}
 //
 //map related functions
 var austin = new google.maps.LatLng(30.30, -97.70); //sets austin's coordinates in a variable
