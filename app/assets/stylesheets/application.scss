@@ -21,6 +21,8 @@ $max:130em;
 $curve:0.8em;
 
 $beige:#A67B4D;
+$navy:#366080;
+$blue:#67b6eb;
 
 @mixin box-sizing($box-model) {
   -webkit-box-sizing: $box-model; // Safari <= 5
@@ -163,7 +165,7 @@ body {
 		@include border-radius2($curve*1.7);
 		.logo {
 			padding:0 0 0 0em;
-			width: 65%;
+			width: 45%;
 			height: 2.2em;
 			background-color: rgba(255,255,255,0.4);
 			overflow: hidden;
@@ -213,7 +215,6 @@ body {
 
 	}
 	aside {
-	// 	float: left;
 		width:90%;
 		.closures {
 			// background-color:gray;
@@ -312,6 +313,49 @@ body {
 			}
 		}
 	}
+	.login-input {
+		width: 60%;
+		margin: 1.5em auto 0 auto;
+		background-color: rgba(255,236,214,0.3);
+		border: 2px solid #828C92;
+		padding:0.4em;
+		@include border-radius($curve);
+		h2 {
+			text-align: center;
+		}
+		.userBox,
+		.passBox {
+			display: block;
+			margin: 0.7em auto 0 0.7em;
+		}
+		.logButton {
+			display: block;
+			margin: 0.7em auto 0 auto;
+		}
+	}
+	.login-signup {
+		width: 60%;
+		margin: 1.5em auto 0 auto;
+		background-color: rgba(255,236,214,0.3);
+		border: 2px solid #828C92;
+		padding:0.4em;
+		@include border-radius($curve);
+		h2 {
+			text-align: center;
+		}
+		.firstName, 
+		.lastName, 
+		.username,
+		.email, 
+		.password {
+			display: block;
+			margin: 0.7em auto 0 0.7em;
+		}
+		.signButton {
+			display: block;
+			margin: 0.7em auto 0 auto;
+		}
+	}
 	.error {
 		font-size: 0.8em;
 		color:red;
@@ -399,7 +443,7 @@ body {
 		@include border-radius2($curve*1.7);
 		.logo {
 			padding:0 0 0 2em;
-			width: 65%;
+			width: 50%;
 			height: 4.2em;
 			// background-color: rgba(169,203,190,0.8);
 			background-color: rgba(255,255,255,0.4);
@@ -554,6 +598,51 @@ body {
 			}
 		}
 	}
+	.login-input {
+		width: 35%;
+		float:left;
+		margin: 1.5em 5% 0 10%;
+		background-color: rgba(255,236,214,0.3);
+		border: 2px solid #828C92;
+		padding:0.4em;
+		@include border-radius($curve);
+		h2 {
+			text-align: center;
+		}
+		.userBox,
+		.passBox {
+			display: block;
+			margin: 0.7em auto 0 0.7em;
+		}
+		.logButton {
+			display: block;
+			margin: 0.7em auto 0 auto;
+		}
+	}
+	.login-signup {
+		width: 35%;
+		float:left;
+		margin: 1.5em 10% 0 5%;
+		background-color: rgba(255,236,214,0.3);
+		border: 2px solid #828C92;
+		padding:0.4em;
+		@include border-radius($curve);
+		h2 {
+			text-align: center;
+		}
+		.firstName, 
+		.lastName, 
+		.username,
+		.email, 
+		.password {
+			display: block;
+			margin: 0.7em auto 0 0.7em;
+		}
+		.signButton {
+			display: block;
+			margin: 0.7em auto 0 auto;
+		}
+	}
 	.error {
 		font-size: 0.8em;
 		color:red;
@@ -644,7 +733,7 @@ body {
 		@include border-radius2($curve*1.7);
 		.logo {
 			padding:0 0 0 2em;
-			width: 60%;
+			width: 45%;
 			height: 5.5em;
 			// background-color: rgba(169,203,190,0.8);
 			background-color: rgba(255,255,255,0.4);
@@ -693,7 +782,6 @@ body {
 
 	}
 	aside {
-	// 	float: left;
 		width:30%;
 		.closures {
 			// background-color:gray;
@@ -796,6 +884,51 @@ body {
 				margin-left:0.4em;
 				// @include border-radius(3em);
 			}
+		}
+	}
+	.login-input {
+		width: 30%;
+		float:left;
+		margin: 1.5em 5% 0 15%;
+		background-color: rgba(255,236,214,0.3);
+		border: 2px solid #828C92;
+		padding:0.4em;
+		@include border-radius($curve);
+		h2 {
+			text-align: center;
+		}
+		.userBox,
+		.passBox {
+			display: block;
+			margin: 0.7em auto 0 0.7em;
+		}
+		.logButton {
+			display: block;
+			margin: 0.7em auto 0 auto;
+		}
+	}
+	.login-signup {
+		width: 30%;
+		float:left;
+		margin: 1.5em 15% 0 5%;
+		background-color: rgba(255,236,214,0.3);
+		border: 2px solid #828C92;
+		padding:0.4em;
+		@include border-radius($curve);
+		h2 {
+			text-align: center;
+		}
+		.firstName, 
+		.lastName, 
+		.username,
+		.email, 
+		.password {
+			display: block;
+			margin: 0.7em auto 0 0.7em;
+		}
+		.signButton {
+			display: block;
+			margin: 0.7em auto 0 auto;
 		}
 	}
 	.error {
