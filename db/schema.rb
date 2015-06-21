@@ -11,10 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150620153057) do
+ActiveRecord::Schema.define(version: 20150621163130) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "forum_posts", force: :cascade do |t|
+    t.integer  "forum_thread_id"
+    t.integer  "user_id"
+    t.text     "body"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "forum_threads", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "subject"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
