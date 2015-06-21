@@ -57,7 +57,6 @@ body {
 
   .jumbotron {
     background-image: url("/assets/lower_bolton_lake.jpg");
-    background-image: assets-url("lower_bottom_lake.jpg");
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
