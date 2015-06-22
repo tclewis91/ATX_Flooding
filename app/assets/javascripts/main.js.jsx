@@ -71,7 +71,7 @@ function ready(e) {
                 username: username,
                 password: password
             }
-            $.post(
+            $.GET(
                 'https://atxflood.herokuapp.com/users/sign_in',
                 currentUser
             )
@@ -90,7 +90,7 @@ function ready(e) {
                     username: username,
                     password: password
                 }
-                $.post(
+                $.POST(
                     'https://atxflood.herokuapp.com/users/sign_in',
                     currentUser
                 )
@@ -163,7 +163,7 @@ function ready(e) {
                 username: username,
                 email: email
             });
-            $.post(
+            $.get(
                 'https://atxflood.herokuapp.com/users/sign_up',
                 newUser
             )
@@ -243,7 +243,7 @@ function ready(e) {
                     email: email
                 });
                 console.log('wut');
-                $.post(
+                $.get(
                     'https://atxflood.herokuapp.com/users/sign_up',
                     newUser
                 );
