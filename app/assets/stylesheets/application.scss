@@ -326,6 +326,7 @@ body {
 		width:90%;
 		.closures {
 			// background-color:gray;
+			position: relative;
 			width: 90%;
 			overflow: hidden;
 			float: left;
@@ -339,12 +340,17 @@ body {
 				font-size: 1.2em;
 				// margin-left: 0.2em;
 				margin-top: 0.1em;
-				margin-bottom: 0.8em;
+				margin-bottom: 8em;
 			}
 			ul {
 				margin-top: 0.4em;
-				float:right;
-				padding-top: 4em;
+				// float:right;
+				// padding-top: em;
+				position: absolute;
+				bottom:0;
+				right:0;
+				padding-right:0.5em;
+				padding-bottom:0.5em;
 			}
 			a {
 				display: block;
@@ -711,6 +717,7 @@ body {
 		width:30%;
 		.closures {
 			// background-color:gray;
+			position: relative;
 			width: 95%;
 			overflow: hidden;
 			float: left;
@@ -724,12 +731,17 @@ body {
 				font-size: 1.2em;
 				// margin-left: 0.2em;
 				margin-top: 0.1em;
-				margin-bottom: 0.8em;
+				margin-bottom: 8em;
 			}
 			ul {
 				margin-top: 0.4em;
-				float:right;
-				padding-top: 4em;
+				// float:right;
+				// padding-top: em;
+				position: absolute;
+				bottom:0;
+				right:0;
+				padding-right:0.5em;
+				padding-bottom:0.5em;
 			}
 			a {
 				display: block;
@@ -1111,6 +1123,7 @@ body {
 		width:30%;
 		.closures {
 			// background-color:gray;
+			position: relative;
 			width: 100%;
 			overflow: hidden;
 			float: left;
@@ -1124,12 +1137,17 @@ body {
 				font-size: 1.2em;
 				// margin-left: 0.2em;
 				margin-top: 0.1em;
-				margin-bottom: 0.8em;
+				margin-bottom: 8em;
 			}
 			ul {
 				margin-top: 0.4em;
-				float:right;
-				padding-top: 4em;
+				// float:right;
+				// padding-top: em;
+				position: absolute;
+				bottom:0;
+				right:0;
+				padding-right:0.5em;
+				padding-bottom:0.5em;
 			}
 			a {
 				display: block;

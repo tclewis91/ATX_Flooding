@@ -26,9 +26,12 @@ var Home = React.createClass({
 						<div className=" box closures">
 							<h3>Road Closures</h3>
 							<ul>
-								<li className="one"><a href="">9th and Lamar</a></li>
+								<li className="one"><a href="">9th &amp; Lamar</a></li>
 								<li className="two"><a href="">Manchaca near Jones</a></li>
-								<li className="three"><a href="">Springdale and East 7th</a></li>
+								<li className="three"><a href="">Springdale &amp; East 7th</a></li>
+								<li className="four"><a href="">Pleasant Valley &amp; William Cannon</a></li>
+								<li className="five"><a href="">MLK &amp; Webberville</a></li>
+								<li className="six"><a href="">Parmer &amp; Dessau</a></li>
 							</ul>
 						</div>
 						<div className="box shelters">
@@ -42,7 +45,6 @@ var Home = React.createClass({
 								</ul>
 							</div>
 						</div>
-
 					</aside>
 				</div>
 			</section>

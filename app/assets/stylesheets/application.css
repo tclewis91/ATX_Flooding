@@ -220,6 +220,7 @@ body {
   aside {
     width: 90%; }
     aside .closures {
+      position: relative;
       width: 90%;
       overflow: hidden;
       float: left;
@@ -235,11 +236,14 @@ body {
         float: left;
         font-size: 1.2em;
         margin-top: 0.1em;
-        margin-bottom: 0.8em; }
+        margin-bottom: 8em; }
       aside .closures ul {
         margin-top: 0.4em;
-        float: right;
-        padding-top: 4em; }
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-right: 0.5em;
+        padding-bottom: 0.5em; }
       aside .closures a {
         display: block;
         margin-bottom: 0.1em;
@@ -636,6 +640,7 @@ body {
   aside {
     width: 30%; }
     aside .closures {
+      position: relative;
       width: 95%;
       overflow: hidden;
       float: left;
@@ -651,11 +656,14 @@ body {
         float: left;
         font-size: 1.2em;
         margin-top: 0.1em;
-        margin-bottom: 0.8em; }
+        margin-bottom: 8em; }
       aside .closures ul {
         margin-top: 0.4em;
-        float: right;
-        padding-top: 4em; }
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-right: 0.5em;
+        padding-bottom: 0.5em; }
       aside .closures a {
         display: block;
         margin-bottom: 0.1em;
@@ -1056,6 +1064,7 @@ body {
   aside {
     width: 30%; }
     aside .closures {
+      position: relative;
       width: 100%;
       overflow: hidden;
       float: left;
@@ -1071,11 +1080,14 @@ body {
         float: left;
         font-size: 1.2em;
         margin-top: 0.1em;
-        margin-bottom: 0.8em; }
+        margin-bottom: 8em; }
       aside .closures ul {
         margin-top: 0.4em;
-        float: right;
-        padding-top: 4em; }
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-right: 0.5em;
+        padding-bottom: 0.5em; }
       aside .closures a {
         display: block;
         margin-bottom: 0.1em;

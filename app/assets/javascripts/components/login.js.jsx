@@ -29,6 +29,7 @@ var Login = React.createClass({
 				<section className = 'signUpSuccess'>
 					You have succesfully signed up! Click <a href = '#login'>here</a> to log in!
 				</section>
+				
 			</section>
 		);
 	}
