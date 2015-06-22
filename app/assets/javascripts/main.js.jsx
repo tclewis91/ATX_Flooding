@@ -71,7 +71,7 @@ function ready(e) {
                 username: username,
                 password: password
             }
-            $.GET(
+            $.get(
                 'https://atxflood.herokuapp.com/users/sign_in',
                 currentUser
             )
@@ -90,7 +90,7 @@ function ready(e) {
                     username: username,
                     password: password
                 }
-                $.POST(
+                $.post(
                     'https://atxflood.herokuapp.com/users/sign_in',
                     currentUser
                 )
