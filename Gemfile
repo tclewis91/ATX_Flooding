@@ -12,7 +12,6 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'puma'
 gem 'react-rails'
 gem 'devise', '~> 3.5.1'
-gem 'annotate'
 gem 'rack', '1.6.1'
 gem 'ransack', '~> 1.6.6'
 
