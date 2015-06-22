@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   resources :forum_posts
   end
 
-  root to: 'application#login'
+  root to: 'application#index'
 end
