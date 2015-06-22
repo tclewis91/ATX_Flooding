@@ -9,13 +9,11 @@
 $global:1em;
 $max:130em;
 $curve:0.8em;
-
 $beige:#A67B4D;
 $navy:#366080;
 $blue:#67b6eb;
 $from: rgba(54,95,125,1);
 $to: rgba(0,32,54,1);
-
 @mixin linear-gradient($fromColor, $toColor) {
 	background: rgb(54,95,125); /* Old browsers */
 	background: -moz-linear-gradient(top, $fromColor 0%, $toColor 100%); /* FF3.6+ */
@@ -26,6 +24,7 @@ $to: rgba(0,32,54,1);
 	background: linear-gradient(to bottom, $fromColor 0%,$toColor 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#365f7d', endColorstr='#002036',GradientType=0 ); /* IE6-9 */
 }
+
 //=======================================================================
 
 //------------------------------- mixins --------------------------------
